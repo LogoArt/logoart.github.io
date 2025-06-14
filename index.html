@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+    .gallery-item .desc {
+      padding: 1rem;
+    }
+    .gallery-item .desc h3 {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>私のポートフォリオ</h1>
+    <nav>
+      <a href="#">ホーム</a>
+      <a href="#">作品</a>
+      <a href="#">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section class="gallery" id="works">
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400.png?text=CG+作品1" alt="CG 作品1">
+      <div class="desc">
+        <h3>CG作品タイトル</h3>
+        <p>この作品は3Dモデリングとライティングにこだわりました。</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/600x400.png?text=ロゴ+デザイン" alt="ロゴデザイン">
+      <div class="desc">
+        <h3>ロゴデザイン</h3>
+        <p>シンプルで印象に残るロゴを意識しました。</p>
+      </div>
+    </div>
+    <!-- 他の作品も追加可能 -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 あなたの名前. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // スクロール時に要素をフェードインする簡単なアニメーション
+    const items = document.querySelectorAll('.gallery-item');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    items.forEach(item => {
+      item.style.opacity = 0;
+      item.style.transform = 'translateY(50px)';
+      item.style.transition = 'all 0.6s ease-out';
+      observer.observe(item);
+    });
+  </script>
+</body>
+</html>
