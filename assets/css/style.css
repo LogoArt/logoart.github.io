@@ -626,9 +626,10 @@ font-style: normal;
 }
 
 .profile-container {
+  margin: 0;
   display: flex;
   align-items: center;
-  gap: 115px;
+  gap: 110px;
 }
 
 .profile-right {
@@ -656,16 +657,22 @@ font-style: normal;
 }
 
 .profile-name {
-  font-size: 11px;
-  margin-bottom: 80px;
+  font-size: 74px;
+  margin: 40px 0;
   font-family: din-condensed, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.profile-en,
+.profile-en {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
 .profile-ja {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.8;
   margin-bottom: 20px;
+  letter-spacing: 2px;
 }
