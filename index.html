@@ -1,132 +1,233 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f4f4f8;
-      color: #233;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e1e2f;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #aaa;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .gallery-item {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    .gallery-item:hover {
-      transform: translateY(-5px);
-    }
-    .gallery-item img {
-      width: 100%;
-      display: block;
-    }
-    .gallery-item .desc {
-      padding: 1rem;
-    }
-    .gallery-item .desc h3 {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatsumi Nakanishi</title>
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/mhz6zti.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'kbw7yop',
+                scriptTimeout: 3000,
+                async: true
+            }, h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+                s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true; clearTimeout(t);
+                try { Typekit.load(config) } catch (e) { }
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <!-- Reset & Main CSS -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>たつのポートフォリオ</h1>
-    <nav>
-      <a href="#">ホーム</a>
-      <a href="#">作品</a>
-      <a href="#">お問い合わせ</a>
-    </nav>
-  </header>
 
-  <section class="gallery" id="works">
-    <div class="gallery-item">
-      <img src="https://via.placeholder.com/600x400.png?text=CG+作品1" alt="CG 作品1">
-      <div class="desc">
-        <h3>CG作品タイトル</h3>
-        <p>この作品は3Dモデリングとライティングにこだわりました。</p>
-      </div>
+    <!-- ==================== Header ==================== -->
+    <header class="header">
+        <h1 class="header-logo">
+            <a href="#">
+                <img src="assets/image/header-logo.png" alt="Header logo">
+            </a>
+        </h1>
+        <a class="top-button" href="#">Back to Top</a>
+    </header>
+
+    <!-- ==================== Hamburger Menu ==================== -->
+    <div class="toggle-button" id="toggleButton">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-    <div class="gallery-item">
-      <img src="https://via.placeholder.com/600x400.png?text=ロゴ+デザイン" alt="ロゴデザイン">
-      <div class="desc">
-        <h3>ロゴデザイン</h3>
-        <p>シンプルで印象に残るロゴを意識しました。</p>
-      </div>
+
+    <div class="navArea" id="navArea">
+        <nav class="glass-menu">
+            <ul>
+                <li><a href="#index" class="underline-hover">Index</a></li>
+                <li><a href="#profile" class="underline-hover">About</a></li>
+                <li><a href="#works" class="underline-hover">Works</a></li>
+                <li><a href="#portfolio" class="underline-hover">Portfolio</a></li>
+                <li><a href="#contact" class="underline-hover">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="overlay" id="overlay"></div>
     </div>
-    <!-- 他の作品も追加可能 -->
-  </section>
 
-  <footer>
-    <p>&copy; 2025 あなたの名前. All rights reserved.</p>
-  </footer>
+    <!-- ==================== Hero ==================== -->
+    <section class="index-hero" id="index">
+        <div class="swiper index-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/image/here-img-1.webp" alt="KNOCK Slide">
+                    <div class="slide-caption">KNOCK - 感性を刺激する強いノック . 2024</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/here-img-2.webp" alt="AAC Slide">
+                    <div class="slide-caption">AAC - 記憶が生み出す新しい形 . 2023</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/here-img-3.webp" alt="JINDAI Slide">
+                    <div class="slide-caption">神代附属 - 2025フライヤー . 2024</div>
+                </div>
+            </div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="previous"></div>
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="next"></div>
+            <div class="swiper-pagination" tabindex="0" role="navigation" aria-label="select"></div>
+        </div>
+        <div class="index-title">
+            <strong>Tatsumi Nakanishi<br>, Portfolio</strong>
+        </div>
+    </section>
 
-  <script>
-    // スクロール時に要素をフェードインする簡単なアニメーション
-    const items = document.querySelectorAll('.gallery-item');
+    <div class="here-video">
+        <video autoplay loop muted preload>
+            <source src="./assets/video/00000.mp4" type="video/mp4">
+        </video>
+    </div>
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
+    <!-- ==================== Profile ==================== -->
+    <section class="profile" id="profile">
+        <div class="rect-left"></div>
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="./assets/image/profile-img.png" alt="Profile Photo">
+            </div>
+            <div class="profile-text">
+                <div class="profile-header">
+                    <h1 class="profile-hello">Hello</h1>
+                    <a href="about.html#profile" class="profile-button">PROFILE＋</a>
+                </div>
+                <p class="profile-des-en">
+                    My name is Tatsumi Nakanishi, <br>
+                    a high school student with a passion for<br>
+                    bringing ideas to life.<br>
+                    My creative drive goes beyond posters and<br>
+                    logos—I've taken on roles in art direction for<br>
+                    school festivals and music groups,explored<br>
+                    game development, and even joined business<br>
+                    competitions.<br>
+                    I’m always eager to explore new forms of<br>
+                    expression and push my creative boundaries.
+                </p>
+                <p class="profile-des-ja">
+                    中西達海と申します。アイディアを形にするのが大好きな高校生です。<br>
+                    私の熱い制作意欲はポスターやロゴなどのデザイン領域に収まらず、文化祭や軽音グループの<br>
+                    アートディレクション、ゲーム制作やビジネスコンテストなど、様々な分野に挑戦してきました。<br>
+                    私はこれからも新しい表現を探求し続けます。
+                </p>
+            </div>
+        </div>
+        <div class="rect-right"></div>
+    </section>
 
-    items.forEach(item => {
-      item.style.opacity = 0;
-      item.style.transform = 'translateY(50px)';
-      item.style.transition = 'all 0.6s ease-out';
-      observer.observe(item);
-    });
-  </script>
+    <!-- ==================== Works ==================== -->
+    <section class="works" id="works">
+        <div class="works-container">
+            <div class="works-title">
+                <h2>Works.</h2>
+            </div>
+            <div class="works-tags">
+                <p>
+                    ILLUSTRATE , LOGODESIGN . TYPOGRAPHY<br>
+                    GRAPHIC DESIGN . WEBDESIGN
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Works Cards ==================== -->
+    <section class="works-section">
+        <div class="grid-item left">
+            <article class="card">
+                <a href="font.html" class="card-link">
+                    <img src="./assets/image/works-font.png" alt="Font Preview">
+                </a>
+            </article>
+            <h1 class="card-headline">FONT</h1>
+        </div>
+        <div class="grid-item right">
+            <h1 class="card-headline">LOGO</h1>
+            <article class="card">
+                <a href="logo.html" class="card-link">
+                    <img src="./assets/image/works-logo.png" alt="Logo Preview">
+                </a>
+            </article>
+        </div>
+        <div class="grid-item left">
+            <article class="card">
+                <a href="project.html" class="card-link">
+                    <img src="./assets/image/works-project.png" alt="Project Preview">
+                </a>
+            </article>
+            <h1 class="card-headline">PROJECT</h1>
+        </div>
+        <div class="grid-item right">
+            <h1 class="card-headline">CONTEST</h1>
+            <article class="card">
+                <a href="contest.html" class="card-link">
+                    <img src="./assets/image/works-contest.png" alt="Contest Preview">
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- ==================== View All Works ==================== -->
+    <div class="works-viewall">
+        <a href="works.html" class="viewall-link">VIEW ALL WORKS＋</a>
+    </div>
+
+    <!-- ==================== Footer ==================== -->
+    <footer class="footer">
+        <div class="footer-left">
+            <ul class="menu-list">
+                <li><a href="#index">Index</a></li>
+                <li><a href="#profile">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-logo">
+                <img src="./assets/image/footer-logo.png" alt="Footer logo">
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="sns">
+                <p class="label">SNS</p>
+                <ul>
+                    <li>Instagram <a href="https://www.instagram.com/logoart0506" target="_blank">@logoart0506 ↗</a>
+                    </li>
+                    <li>X <a href="#" target="_blank">@logo.art ↗</a></li>
+                    <li>Dribbble <a href="https://dribbble.com/LogoArt_" target="_blank">@LogoArt ↗</a></li>
+                    <li><a href="https://github.com/LogoArt" target="_blank">Github ↗</a></li>
+                </ul>
+            </div>
+            <div class="mail">
+                <p class="label">Mail</p>
+                <p><a href="mailto:hz200154xv@gmail.com">hz200154xv@gmail.com</a></p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Tatsumi Nakanishi</p>
+    </footer>
+
+    <!-- ==================== JS ==================== -->
+    <script src="./assets/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index-swiper.js"></script>
 </body>
+
 </html>

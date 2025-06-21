@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "acumin-variable", sans-serif, "Helvetica Neue", "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-size: 15px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    cursor: pointer;
+}
+
+/* ==================== Utility ==================== */
+
+.underline-hover {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: color 0.4s ease;
+}
+
+.underline-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.underline-hover:hover::after {
+    transform: scaleX(1);
+}
+
+/* ==================== Header ==================== */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.header-logo img {
+    margin: 0;
+    width: 180px;
+    height: auto;
+    padding: 15px 0 0 40px;
+    transition: filter 0.3s ease;
+}
+
+.top-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-family: dharma-gothic-c, sans-serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.top-button.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ==================== Toggle Button ==================== */
+
+.toggle-button {
+    display: block;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.4s ease;
+    border-radius: 3px;
+}
+
+.toggle-button span:nth-child(1) {
+    top: 4px;
+}
+
+.toggle-button span:nth-child(2) {
+    top: 12px;
+}
+
+.toggle-button span:nth-child(3) {
+    top: 20px;
+}
+
+.toggle-button.open span:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+}
+
+.toggle-button.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-button.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+
+/* ==================== Hamburger Menu ==================== */
+
+.navArea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 90;
+}
+
+.navArea.open {
+    pointer-events: auto;
+}
+
+.glass-menu {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    transition: right 0.4s ease;
+    padding: 100px 30px;
+    box-sizing: border-box;
+    pointer-events: auto;
+}
+
+.navArea.open .glass-menu {
+    right: 0;
+}
+
+.glass-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.glass-menu ul li a {
+    margin-left: 15vh;
+    font-size: 35px;
+    color: #000;
+    text-decoration: none;
+    font-family: "acumin-variable", sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    pointer-events: auto;
+    display: none;
+}
+
+.navArea.open .overlay {
+    display: block;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* ==================== Hero Section ==================== */
+
+.index-title {
+    padding-top: 2vh;
+    padding-left: 2%;
+    height: 20vh;
+    background-color: #fff;
+    display: flex;
+    font-family: linotype-didot, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 113px;
+}
+
+.index-swiper {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 12px;
+    color: #000;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000;
+    width: 5px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 30px;
+}
+
+.swiper-button-prev {
+    left: 30px;
+}
+
+.swiper-button-next {
+    right: 30px;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000;
+    opacity: 1; 
+}
+/* === Profile Section === */
+.profile {
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+}
+
+.rect-left,
+.rect-right {
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    z-index: 5;
+}
+
+.rect-left {
+    left: 0;
+    width: 135px;
+    height: 768px;
+}
+
+.rect-right {
+    right: 0;
+    width: 10px;
+    height: 768px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 0 0 40px;
+    margin: 400px 0 0 175px;
+    gap: 40px;
+    min-height: 768px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-photo img {
+    width: 495px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.profile-hello {
+    font-size: 162px;
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+    margin: 0;
+    line-height: 1;
+}
+
+.profile-button {
+    padding-right: 120px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    transition: filter 1s ease;
+}
+
+.profile-button:hover {
+    color: #555;
+}
+
+.profile-des-en {
+    font-size: 30px;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    margin-top: 20px;
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+}
+
+.profile-des-ja {
+    font-size: 10px;
+    margin-top: 30px;
+    line-height: 2;
+    color: #000;
+    font-family: yu-mincho-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+/* === Works Section === */
+.works-container {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.works-title {
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+    font-size: 140px;
+    margin: 0;
+}
+
+.works-tags {
+    font-family: "dharma-gothic-c", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 12px;
+    margin: 0;
+    text-align: right;
+    line-height: 1;
+}
+
+.works-section {
+    margin: 60px 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+}
+
+.card {
+    width: 100%;
+    height: 690px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #000;
+    transition: filter 0.5s ease;
+}
+
+.card-headline {
+    margin: 20px 0;
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+    font-size: 160px;
+    letter-spacing: -10px;
+}
+
+.grid-item.right .card-headline {
+    order: -1;
+    margin-bottom: 0;
+}
+
+.grid-item.left .card-headline {
+    margin-top: 0;
+}
+
+.works-viewall {
+    margin: 300px 0 800px;
+    text-align: center;
+}
+
+.viewall-link {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #000;
+    transition: filter 1s ease;
+}
+
+.viewall-link:hover {
+    color: #555;
+}
+
+/* === Footer Section === */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    padding: 5vh 5vw;
+    background: #fff;
+    color: #000;
+    position: relative;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left .menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0 0 80px;
+    flex: 1;
+}
+
+.footer .menu-list a {
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+    font-size: 45px;
+}
+
+.footer-left ul {
+    list-style: none;
+}
+
+.footer-left ul li {
+    margin-bottom: 3vh;
+    font-size: 2.5vw;
+}
+
+.footer-left ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 70px;
+    height: auto;
+    padding: 0;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1vw;
+    gap: 4vh;
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+}
+
+.footer-right .label {
+    color: #000;
+    font-style: italic;
+    margin-bottom: 0.5vh;
+    font-size: 0.9vw;
+    text-align: right;
+}
+
+.footer-right ul {
+    color: #000;
+    list-style: none;
+    text-align: right;
+}
+
+.footer-right ul li {
+    margin-bottom: 1vh;
+}
+
+.footer-right a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #555;
+}
+
+.mail a {
+    color: #000;
+    text-decoration: none;
+}
+
+.mail a:hover {
+    color: #555;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6vw;
+    color: #000;
+}
