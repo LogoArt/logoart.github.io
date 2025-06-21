@@ -27,6 +27,47 @@ button {
     cursor: pointer;
 }
 
+
+/* ==================== Font ==================== */
+
+.font-Acumin-default {
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+}
+.font-Acumin-Ex-light {
+    font-family: "acumin-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 200;
+}
+.font-yu-mincho-pr6n {
+    font-family: "yu-mincho-pr6n", sans-serif;
+}
+
+.font-Linotype {
+    font-family: "linotype-didot", serif;
+}
+.font-DharmaGothic-C-thin {
+    font-family:"dharma-gothic-c", sans-serif;
+    font-family: dharma-gothic-c, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.font-DharmaGothic-C-exlight {
+font-family: dharma-gothic-c, sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+.font-DharmaGothic-E {
+    font-family: "dharma-gothic-e", sans-serif;
+}
+
+.font-DIN-light {
+    font-family: din-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
 /* ==================== Utility ==================== */
 
 .underline-hover {
@@ -80,7 +121,6 @@ button {
     position: fixed;
     right: 30px;
     bottom: 30px;
-    font-family: dharma-gothic-c, sans-serif;
     font-size: 24px;
     letter-spacing: 4px;
     text-decoration: none;
@@ -192,7 +232,6 @@ button {
     font-size: 35px;
     color: #000;
     text-decoration: none;
-    font-family: "acumin-variable", sans-serif;
 }
 
 .overlay {
@@ -222,7 +261,6 @@ button {
     height: 20vh;
     background-color: #fff;
     display: flex;
-    font-family: linotype-didot, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 113px;
@@ -313,7 +351,7 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     padding: 0 0 0 40px;
-    margin: 400px 0 0 175px;
+    margin: 600px 0 400px 175px;
     gap: 40px;
     min-height: 768px;
     position: relative;
@@ -342,8 +380,6 @@ button {
 
 .profile-hello {
     font-size: 162px;
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
     margin: 0;
     line-height: 1;
 }
@@ -364,11 +400,9 @@ button {
 
 .profile-des-en {
     font-size: 30px;
-    letter-spacing: 6px;
     line-height: 1.4;
     margin-top: 20px;
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+    letter-spacing: 4px;
 }
 
 .profile-des-ja {
@@ -376,15 +410,13 @@ button {
     margin-top: 30px;
     line-height: 2;
     color: #000;
-    font-family: yu-mincho-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 5px;
 }
 
-/* === Works Section === */
-.works-container {
-    margin-top: 200px;
+/* === Section === */
+.section-title-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -393,15 +425,12 @@ button {
     box-sizing: border-box;
 }
 
-.works-title {
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+.section-title {
     font-size: 140px;
     margin: 0;
 }
 
-.works-tags {
-    font-family: "dharma-gothic-c", sans-serif;
+.section-tags {
     font-weight: 100;
     font-style: normal;
     font-size: 50px;
@@ -442,8 +471,6 @@ button {
 
 .card-headline {
     margin: 20px 0;
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
     font-size: 160px;
     letter-spacing: -10px;
 }
@@ -503,8 +530,6 @@ button {
 }
 
 .footer .menu-list a {
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
     font-size: 45px;
 }
 
@@ -547,8 +572,6 @@ button {
     align-items: flex-end;
     font-size: 1vw;
     gap: 4vh;
-    font-family: "acumin-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
 }
 
 .footer-right .label {
@@ -594,4 +617,55 @@ button {
     transform: translateX(-50%);
     font-size: 0.6vw;
     color: #000;
+}
+/* About Profile */
+
+.profile-section {
+  padding: 200px 155px;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+}
+
+.profile-right {
+  max-width: 800px;
+}
+
+.profile-left {
+    width: 440px;
+    flex-shrink: 0;
+}
+
+.profile-title {
+  padding: 5px 0 10px 5px;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: din-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #000;
+}
+
+.profile-name {
+  font-size: 11px;
+  margin-bottom: 80px;
+  font-family: din-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.profile-en,
+.profile-ja {
+  font-size: 11px;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
