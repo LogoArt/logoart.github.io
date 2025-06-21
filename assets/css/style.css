@@ -318,8 +318,8 @@ font-style: normal;
     background-color: #000;
     opacity: 1; 
 }
-/* === Profile Section === */
-.profile {
+/* === Index Section === */
+.index-profile {
     position: relative;
     background-color: #fff;
     padding: 0;
@@ -346,7 +346,7 @@ font-style: normal;
     height: 768px;
 }
 
-.profile-container {
+.index-profile-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -358,33 +358,33 @@ font-style: normal;
     z-index: 1;
 }
 
-.profile-photo img {
+.index-profile-photo img {
     width: 495px;
     height: auto;
     object-fit: cover;
     display: block;
 }
 
-.profile-text {
+.index-profile-text {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.profile-header {
+.index-profile-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.profile-hello {
+.index-profile-hello {
     font-size: 162px;
     margin: 0;
     line-height: 1;
 }
 
-.profile-button {
+.index-profile-button {
     padding-right: 120px;
     font-size: 12px;
     text-decoration: none;
@@ -394,18 +394,18 @@ font-style: normal;
     transition: filter 1s ease;
 }
 
-.profile-button:hover {
+.index-profile-button:hover {
     color: #555;
 }
 
-.profile-des-en {
+.index-profile-des-en {
     font-size: 30px;
     line-height: 1.4;
     margin-top: 20px;
     letter-spacing: 4px;
 }
 
-.profile-des-ja {
+.index-profile-des-ja {
     font-size: 10px;
     margin-top: 30px;
     line-height: 2;
@@ -618,9 +618,9 @@ font-style: normal;
     font-size: 0.6vw;
     color: #000;
 }
-/* About Profile */
 
-.profile-section {
+/* About Profile */
+.profile {
   padding: 200px 155px;
   box-sizing: border-box;
 }
@@ -675,4 +675,54 @@ font-style: normal;
   line-height: 1.8;
   margin-bottom: 20px;
   letter-spacing: 2px;
+}
+
+/* Plofile info */
+.info-section {
+  width: 90%;
+  max-width: 1270px;
+  margin: 200px auto 400px auto;
+  padding: 5vh 0;
+}
+
+.profile-info {
+  border-top: 1px solid #000;
+  padding: 1.2vh 0;
+}
+
+.profile-info h2 {
+    padding-left: 2vw;
+  font-size: 1.1vw;
+  font-weight: 0;
+}
+
+.profile-info p,
+.profile-info ul {
+    margin-left: 40vw;
+    font-size: 0.8vw;
+    line-height: 1.8;
+    max-width: 45vw; 
+}
+.info-bottom {
+    margin-bottom: 2vw;
+}
+
+.profile-info ul {
+  list-style: none;
+}
+
+.profile-info a {
+    text-decoration: none;
+    color: #000;
+}
+}
+
+.profile-info ul li {
+  margin-bottom: 1vh;
+}
+
+.note {
+  font-size: 0.6vw;
+  margin: -0.6vw 0 2vh 0.6vw;
+  color: #444;
 }
