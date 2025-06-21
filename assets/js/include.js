@@ -1,12 +1,22 @@
-function loadHTML(id, file) {
-  fetch(file)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(id).innerHTML = data;
-    });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  loadHTML("header", "header.html");
-  loadHTML("footer", "footer.html");
+  const includeElement = (selector, url, callback) => {
+    const element = document.querySelector(selector);
+    if (element) {
+      fetch(url)
+        .then(res => res.text())
+        .then(data => {
+          element.innerHTML = data;
+          if (typeof callback === "function") callback();
+        });
+    }
+  };
+
+  // header 読み込み → menuやtop-buttonの動作を有効化
+  includeElement("#header", "header.html", () => {
+    initMenu();               // ハンバーガーメニュー動作
+    initScrollTopButton();    // スクロールに応じてtop-button表示
+  });
+
+  // footer 読み込み（初期化不要ならそのままでOK）
+  includeElement("#footer", "footer.html");
 });
