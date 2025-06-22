@@ -621,7 +621,7 @@ font-style: normal;
 
 /* About Profile */
 .profile {
-  padding: 200px 155px;
+  padding: 200px 155px 200px 200px;
   box-sizing: border-box;
 }
 
@@ -629,7 +629,7 @@ font-style: normal;
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 110px;
+  gap: 155px;
 }
 
 .profile-right {
@@ -651,10 +651,22 @@ font-style: normal;
 }
 
 .profile-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background-color: #000;
+  width: 440px;
+  height: 480px;
+  overflow: hidden;           /* マスクするために必要 */
+  border-radius: 0;           /* 丸く切り抜かない場合 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;     /* プレースホルダ背景（任意） */
 }
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;          /* 縦横比を維持しつつトリミング */
+}
+
 
 .profile-name {
   font-size: 74px;
@@ -715,7 +727,6 @@ font-style: normal;
     text-decoration: none;
     color: #000;
 }
-}
 
 .profile-info ul li {
   margin-bottom: 1vh;
@@ -725,4 +736,53 @@ font-style: normal;
   font-size: 0.6vw;
   margin: -0.6vw 0 2vh 0.6vw;
   color: #444;
+}
+
+/* Works */
+
+.works-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit; 
+}
+
+.works-card {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px;
+    background-color: #fff;
+    transition: background-color 0.8s ease;
+}
+.works-card:hover {
+  background-color: #eee;
+}
+
+.card-image {
+  width: 40%;
+  height: 180px;
+  background-color: #000;
+  margin-right: 40px;
+}
+
+.card-content {
+  flex: 1;
+  padding: 70px 0 70px 80px;
+}
+
+.card-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.card-text {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.works-divider {
+  height: 1px;
+  background-color: #000;
+  margin: 0 40px;
 }
