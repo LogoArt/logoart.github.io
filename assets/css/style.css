@@ -786,3 +786,73 @@ font-style: normal;
   background-color: #000;
   margin: 0 40px;
 }
+
+/* Logo Cards */
+
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.work-card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Acumin', sans-serif;
+  position: relative;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.work-image {
+  background-color: #000;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work-divider {
+  height: 1px;
+  background-color: #000;
+  margin: 20px 0 10px 0;
+}
+
+.work-meta {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.work-meta .label {
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 60px;
+  flex-shrink: 0;
+}
+
+.work-meta .title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 10px;
+  letter-spacing: 2.87px;
+}
+
+.work-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+  letter-spacing: 1.87px;
+}
