@@ -10,7 +10,7 @@ const contest = [
     image: "assets/image/works-contest-aac.webp",
     title: "記憶が生み出す新しい形",
     date: "2024-01-05",
-    link: "https://example.com/contest-entry-2"
+    link: "https://aac.urbanet.jp/aac2024-poster-judging-results/"
   },
   {
     image: "assets/image/works-contest-ku.webp",
@@ -22,7 +22,7 @@ const contest = [
     image: "assets/image/works-contest-maca.webp",
     title: "ふるさと",
     date: "2024-01-30",
-    link: "https://example.com/contest-entry-3"
+    link: "https://maca.sendenkaigi.com/archive/index.html"
   },
   {
     image: "assets/image/works-contest-ku-fes.webp",
@@ -31,7 +31,7 @@ const contest = [
     link: "https://www.fhs.kanagawa-u.ac.jp/life/fes_2024.html"
   },
     {
-    image: "assets/image/works-contest-domon.webp",
+    image: "assets/image/works-logo-domon.webp",
     title: "土門拳 Musium",
     date: "2024-08-05",
     link: "http://www.domonken-kinenkan.jp/topics-news/news/logo4.html"
@@ -99,6 +99,12 @@ const logo = [
     title: "KUSUNOKI CAFE",
     date: "2024-04-06",
     link: "https://example.com/sunset-design"
+  },
+    {
+     image: "assets/image/works-logo-domon.webp",
+    title: "土門拳 Musium",
+    date: "2024-08-05",
+    link: "http://www.domonken-kinenkan.jp/topics-news/news/logo4.html"
   },
   {
     image: "assets/image/works-logo-aki.webp",
