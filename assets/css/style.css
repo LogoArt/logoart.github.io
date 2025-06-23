@@ -789,7 +789,7 @@ font-style: normal;
 
 /* Cards */
 
-.works-container {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
@@ -797,7 +797,7 @@ font-style: normal;
   box-sizing: border-box;
 }
 
-.work-card {
+.card {
   background: #fff;
   display: flex;
   flex-direction: column;

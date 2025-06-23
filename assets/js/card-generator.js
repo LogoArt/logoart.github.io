@@ -1,5 +1,5 @@
 // /assets/js/cards-generator.js
-const works = [
+const logo = [
   {
     image: "assets/image/works-logo-kusu-cafe1.webp",
     title: "KUSUNOKI CAFE",
@@ -326,41 +326,74 @@ const works = [
   },
 ]
 
-// Generate work cards dynamically
-const container = document.getElementById("worksContainer");
+// 例: logo, font など複数のリストを用意
+const font = [
+  {
+    image: "assets/image/font-sample1.webp",
+    title: "Sample Font 1",
+    date: "2024-05-01",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/font-sample2.webp",
+    title: "Sample Font 2",
+    date: "2024-06-15",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/font-sample3.webp",
+    title: "Sample Font 3",
+    date: "2024-07-20",
+    link: "https://example.com/font-design"
+  },
+];
 
-works.forEach(work => {
-  const card = document.createElement("div");
-  card.className = "work-card";
-
-  card.innerHTML = `
-  <a href="${work.link}" target="_blank" style="text-decoration: none; color: #000;">
-    <div class="work-card">
-      <div class="card-image">
-        <img src="${work.image}" alt="${work.title}">
-      </div>
-      <div class="card-divider"></div>
-      <div class="card-meta font-Acumin-default">
-        <p class="label font-Acumin-default">Title</p>
-        <p class="title">${work.title}</p>
-      </div>
-      <p class="card-date font-Acumin-default">${work.date}</p>
-    </div>
-  </a>
-`;
-
-  container.appendChild(card);
-});
-
-// タイトルの文字数に応じてletter-spacingを調整
-const titles = document.querySelectorAll('.work-meta .title');
-titles.forEach(title => {
-  const len = title.textContent.length;
-  if (len > 15) {
-    title.style.letterSpacing = "1px";
-  } else if (len > 10) {
-    title.style.letterSpacing = "1.5px";
-  } else {
-    title.style.letterSpacing = "2.87px";
+// どのリストを使うか判定
+let dataList = [];
+const cardsSection = document.querySelector('.cards');
+if (cardsSection) {
+  if (cardsSection.id === 'logo') {
+    dataList = logo;
+  } else if (cardsSection.id === 'font') {
+    dataList = font;
   }
-});
+  // 必要なら他のidも追加
+}
+
+// カード生成
+const container = document.getElementById("cardsContainer");
+if (container && dataList.length > 0) {
+  dataList.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="card">
+        <a href="${item.link}" target="_blank" style="text-decoration: none; color: #000;">
+          <div class="card-image">
+            <img src="${item.image}" alt="${item.title}">
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-meta font-Acumin-default">
+            <p class="label font-Acumin-default">Title</p>
+            <p class="title">${item.title}</p>
+          </div>
+          <p class="card-date font-Acumin-default">${item.date}</p>
+        </a>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  // タイトルの文字数に応じてletter-spacingを調整
+  const titles = container.querySelectorAll('.card-meta .title');
+  titles.forEach(title => {
+    const len = title.textContent.length;
+    if (len > 15) {
+      title.style.letterSpacing = "1px";
+    } else if (len > 10) {
+      title.style.letterSpacing = "1.5px";
+    } else {
+      title.style.letterSpacing = "2.87px";
+    }
+  });
+}
