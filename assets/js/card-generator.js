@@ -1,4 +1,98 @@
-// /assets/js/cards-generator.js
+// Contest
+const contest = [
+  {
+    image: "assets/image/works-contest-knock.webp",
+    title: "感性を刺激するKNOCK",
+    date: "2024-07-26",
+    link: "https://school.japandesign.ne.jp/article/knock-01"
+  },
+  {
+    image: "assets/image/works-contest-aac.webp",
+    title: "記憶が生み出す新しい形",
+    date: "2024-01-05",
+    link: "https://example.com/contest-entry-2"
+  },
+  {
+    image: "assets/image/works-contest-ku.webp",
+    title: "自然と共に日進月歩",
+    date: "2025-02-19",
+    link: "https://www.fhs.kanagawa-u.ac.jp/news/index.php?c=topics_view&pk=1746859600"
+  },
+  {
+    image: "assets/image/works-contest-maca.webp",
+    title: "ふるさと",
+    date: "2024-01-30",
+    link: "https://example.com/contest-entry-3"
+  },
+  {
+    image: "assets/image/works-contest-ku-fes.webp",
+    title: "KUSUNOKI FESTIVAL",
+    date: "2024-08-23",
+    link: "https://www.fhs.kanagawa-u.ac.jp/life/fes_2024.html"
+  },
+    {
+    image: "assets/image/works-contest-domon.webp",
+    title: "土門拳 Musium",
+    date: "2024-08-05",
+    link: "http://www.domonken-kinenkan.jp/topics-news/news/logo4.html"
+  },
+    {
+    image: "assets/image/works-typo-nenga.webp",
+    title: "Pop 2025",
+    date: "2024-08-12",
+    link: "https://www.printpac.co.jp/design/2024/nenga_result/"
+  },
+    {
+    image: "assets/image/works-contest-pen.webp",
+    title: "Shade",
+    date: "2024-01-31",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-aki.webp",
+    title: "Aki City",
+    date: "2024-01-31",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-typo-dream.webp",
+    title: "Dream Challenger",
+    date: "2024-10-13",
+    link: "https://example.com/font-design"
+  },
+{
+    image: "assets/image/works-contest-apc1.webp",
+    title: "DON'T ATTACK",
+    date: "2024-02-11",
+    link: "https://example.com/sunset-design"
+  },
+{
+    image: "assets/image/works-contest-apc2.webp",
+    title: "医療への攻撃",
+    date: "2024-02-11",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-shiraga.webp",
+    title: "KAZUO SHIRAGA",
+    date: "2024-01-24",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-contest-magokoro.webp",
+    title: "真心",
+    date: "2024-07-31",
+    link: "https://example.com/sunset-design"
+  },
+  {
+    image: "assets/image/works-contest-igg.webp",
+    title: "竹林",
+    date: "2024-10-12",
+    link: "https://example.com/contest-entry-3"
+  },
+];
+
+// Logo
 const logo = [
   {
     image: "assets/image/works-logo-kusu-cafe1.webp",
@@ -326,7 +420,7 @@ const logo = [
   },
 ]
 
-// 例: logo, font など複数のリストを用意
+// Typography
 const typography = [
   {
     image: "assets/image/works-typo-dream.webp",
@@ -376,10 +470,10 @@ const typography = [
     date: "2024-04-03",
     link: "https://example.com/font-design"
   },
-  {
-    image: "assets/image/works-typo-scratch'70.webp",
-    title: "Scratch'70",
-    date: "2023-10-22",
+    {
+    image: "assets/image/works-typo-ukiyoe.webp",
+    title: "浮世絵",
+    date: "2024-03-21",
     link: "https://example.com/font-design"
   },
     {
@@ -430,6 +524,18 @@ const typography = [
     date: "2024-07-20",
     link: "https://example.com/font-design"
   },
+  {
+    image: "assets/image/works-typo-wave.webp",
+    title: "WAVE",
+    date: "2024-07-20",
+    link: "https://example.com/font-design"
+  },
+    {
+    image: "assets/image/works-typo-scratch'70.webp",
+    title: "Scratch'70",
+    date: "2023-10-22",
+    link: "https://example.com/font-design"
+  },
 ];
 
 // どのリストを使うか判定
@@ -438,8 +544,12 @@ const cardsSection = document.querySelector('.cards');
 if (cardsSection) {
   if (cardsSection.id === 'logo') {
     dataList = logo;
-  } else if (cardsSection.id === 'typography') {
+  }
+  else if (cardsSection.id === 'typography') {
     dataList = typography;
+  }
+  else if (cardsSection.id === 'contest') {
+    dataList = contest;
   }
   // 必要なら他のidも追加
 }
