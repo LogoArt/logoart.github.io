@@ -336,15 +336,15 @@ works.forEach(work => {
   card.innerHTML = `
   <a href="${work.link}" target="_blank" style="text-decoration: none; color: #000;">
     <div class="work-card">
-      <div class="work-image">
+      <div class="card-image">
         <img src="${work.image}" alt="${work.title}">
       </div>
-      <div class="work-divider"></div>
-      <div class="work-meta font-Acumin-default">
+      <div class="card-divider"></div>
+      <div class="card-meta font-Acumin-default">
         <p class="label font-Acumin-default">Title</p>
         <p class="title">${work.title}</p>
       </div>
-      <p class="work-date font-Acumin-default">${work.date}</p>
+      <p class="card-date font-Acumin-default">${work.date}</p>
     </div>
   </a>
 `;
