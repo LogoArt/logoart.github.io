@@ -1,7 +1,7 @@
 // /assets/js/cards-generator.js
 const works = [
   {
-    image: "assets/image/works-logo-kusunoki.webp",
+    image: "assets/image/works-logo-kusu-cafe1.webp",
     title: "KUSUNOKI CAFE",
     date: "2024-04-06",
     link: "https://example.com/sunset-design"
@@ -141,7 +141,7 @@ const works = [
     {
     image: "assets/image/works-logo-h-line.webp",
     title: "Logo H-line",
-    date: "2022-07-25",
+    date: "2021-07-25",
     link: "https://example.com/sunset-design"
   },
   {
@@ -165,13 +165,13 @@ const works = [
   {
     image: "assets/image/works-logo-k-line.webp",
     title: "Logo K-line",
-    date: "2022-07-25",
+    date: "2021-07-25",
     link: "https://example.com/sunset-design"
   },
   {
     image: "assets/image/works-logo-mountain.webp",
     title: "Mountain",
-    date: "2022-06-19",
+    date: "2021-06-19",
     link: "https://example.com/sunset-design"
   },
   {
@@ -201,7 +201,7 @@ const works = [
     {
     image: "assets/image/works-logo-r.webp",
     title: "Logo R-bird",
-    date: "2023-08-20",
+    date: "2022-08-20",
     link: "https://example.com/sunset-design"
   },
     {
@@ -238,6 +238,90 @@ const works = [
     image: "assets/image/works-logo-w.webp",
     title: "Logo W",
     date: "2023-01-15",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-mimic.webp",
+    title: "Mimic",
+    date: "2023-05-15",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-d-sail.webp",
+    title: "Logo D-sail",
+    date: "2023-04-25",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-va.webp",
+    title: "Logo V+A",
+    date: "2023-04-30",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-z-green.webp",
+    title: "Logo Z-green",
+    date: "2022-12-24",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-jm.webp",
+    title: "Logo J+M",
+    date: "2023-04-02",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-heart.webp",
+    title: "Heart",
+    date: "2024-09-17",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-record.webp",
+    title: "Record",
+    date: "2023-09-17",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-wb.webp",
+    title: "Logo W+B",
+    date: "2023-01-15",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-k-pink.webp",
+    title: "Logo W+B",
+    date: "2023-01-11",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-s-snake.webp",
+    title: "Logo S-snake",
+    date: "2021-12-24",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-firstwave.webp",
+    title: "First wave",
+    date: "2022-05-07",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-in4.webp",
+    title: "in4",
+    date: "2023-08-23",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-n-pen.webp",
+    title: "Logo N-pen",
+    date: "2022-12-31",
+    link: "https://example.com/sunset-design"
+  },
+    {
+    image: "assets/image/works-logo-kusu-cafe2.webp",
+    title: "KUSUNOKI CAFE 2",
+    date: "2022-12-31",
     link: "https://example.com/sunset-design"
   },
 ]
