@@ -327,22 +327,106 @@ const logo = [
 ]
 
 // 例: logo, font など複数のリストを用意
-const font = [
+const typography = [
   {
-    image: "assets/image/font-sample1.webp",
-    title: "Sample Font 1",
-    date: "2024-05-01",
+    image: "assets/image/works-typo-dream.webp",
+    title: "Dream Challenger",
+    date: "2024-10-13",
     link: "https://example.com/font-design"
   },
   {
-    image: "assets/image/font-sample2.webp",
-    title: "Sample Font 2",
-    date: "2024-06-15",
+    image: "assets/image/works-typo-shade.webp",
+    title: "Font Shade",
+    date: "2024-07-28",
     link: "https://example.com/font-design"
   },
   {
-    image: "assets/image/font-sample3.webp",
-    title: "Sample Font 3",
+    image: "assets/image/works-typo-nenga.webp",
+    title: "Pop 2025",
+    date: "2024-08-12",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-valuein.webp",
+    title: "Font Valuein",
+    date: "2024-07-20",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-marupop.webp",
+    title: "Font Marupop",
+    date: "2024-02-25",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-solid.webp",
+    title: "Font Solid",
+    date: "2024-12-26",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-almaq.webp",
+    title: "Font Almaq",
+    date: "2023-07-25",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-clip.webp",
+    title: "Font Clip",
+    date: "2024-04-03",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-scratch'70.webp",
+    title: "Scratch'70",
+    date: "2023-10-22",
+    link: "https://example.com/font-design"
+  },
+    {
+    image: "assets/image/works-typo-color.webp",
+    title: "Color Poster",
+    date: "2023-07-04",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-typo-classic.webp",
+    title: "Typography Classic",
+    date: "2023-05-05",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-typo-jp.webp",
+    title: "タイポグラフィ",
+    date: "2023-05-05",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-kotoba.webp",
+    title: "言葉のデザイン",
+    date: "2023-05-05",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-word.webp",
+    title: "Word Classic",
+    date: "2023-05-05",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-design.webp",
+    title: "デザイン",
+    date: "2023-05-05",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-exist.webp",
+    title: "Exist",
+    date: "2025-05-05",
+    link: "https://example.com/font-design"
+  },
+  {
+    image: "assets/image/works-typo-logo.webp",
+    title: "L/O/G/O",
     date: "2024-07-20",
     link: "https://example.com/font-design"
   },
@@ -354,8 +438,8 @@ const cardsSection = document.querySelector('.cards');
 if (cardsSection) {
   if (cardsSection.id === 'logo') {
     dataList = logo;
-  } else if (cardsSection.id === 'font') {
-    dataList = font;
+  } else if (cardsSection.id === 'typography') {
+    dataList = typography;
   }
   // 必要なら他のidも追加
 }
@@ -364,6 +448,10 @@ if (cardsSection) {
 const container = document.getElementById("cardsContainer");
 if (container && dataList.length > 0) {
   dataList.forEach(item => {
+    // 日本語が含まれているか判定（ひらがな・カタカナ・漢字）
+    const isJapanese = /[\u3040-\u30FF\u4E00-\u9FFF]/.test(item.title);
+    const metaClass = isJapanese ? 'card-meta font-Acumin-default font-yu-mincho-pr6n' : 'card-meta font-Acumin-default';
+
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
@@ -373,7 +461,7 @@ if (container && dataList.length > 0) {
             <img src="${item.image}" alt="${item.title}">
           </div>
           <div class="card-divider"></div>
-          <div class="card-meta font-Acumin-default">
+          <div class="${metaClass}">
             <p class="label font-Acumin-default">Title</p>
             <p class="title">${item.title}</p>
           </div>
@@ -388,9 +476,9 @@ if (container && dataList.length > 0) {
   const titles = container.querySelectorAll('.card-meta .title');
   titles.forEach(title => {
     const len = title.textContent.length;
-    if (len > 15) {
-      title.style.letterSpacing = "1px";
-    } else if (len > 10) {
+    if (len > 30) {
+      title.style.letterSpacing = "0.8px";
+    } else if (len > 20) {
       title.style.letterSpacing = "1.5px";
     } else {
       title.style.letterSpacing = "2.87px";

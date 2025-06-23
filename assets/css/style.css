@@ -426,7 +426,7 @@ font-style: normal;
 }
 
 .section-title {
-    font-size: 140px;
+    font-size: 110px;
     margin: 0;
 }
 
@@ -436,6 +436,7 @@ font-style: normal;
     font-size: 50px;
     letter-spacing: 12px;
     margin: 0;
+    padding-top: 50px;
     text-align: right;
     line-height: 1;
 }
