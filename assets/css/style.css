@@ -863,3 +863,10 @@ font-style: normal;
   margin: 0;
   letter-spacing: 1.87px;
 }
+
+.cards-container .card {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.8s ease;
+}
+.cards-container .card:hover {
+  transform: scale(1.02);
+}

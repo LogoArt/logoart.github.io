@@ -91,6 +91,22 @@ const contest = [
     link: "https://example.com/contest-entry-3"
   },
 ];
+//Project
+const project = [
+  {
+    image: "assets/image/works-contest-ku-fes.webp",
+    title: "2024 くすのき祭",
+    date: "2024",
+    link: "https://example.com/contest-entry-3"
+  },
+  {
+    image: "assets/image/works-project-trackrock.webp",
+    title: "TRACK ROCK",
+    date: "2023 - 2024",
+    link: "https://example.com/contest-entry-3"
+  },
+
+]
 
 // Logo
 const logo = [
@@ -544,6 +560,118 @@ const typography = [
   },
 ];
 
+//Graphic
+const graphic = [
+    {
+    image: "assets/image/works-contest-knock.webp",
+    title: "感性を刺激するKNOCK",
+    date: "2024-07-26",
+    link: "https://school.japandesign.ne.jp/article/knock-01"
+  },
+  {
+    image: "assets/image/works-graphic-okinawa.webp",
+    title: "Okinawa",
+    date: "2023-11-04",
+    link: "https://example.com/graphic-design-1"
+  },
+  {
+    image: "assets/image/works-graphic-flower.webp",
+    title: "Flower",
+    date: "2024-01-14",
+    link: "https://example.com/graphic-design-1"
+  },
+  {
+    image: "assets/image/works-graphic-underground.webp",
+    title: "Underground",
+    date: "2023-12-27",
+    link: "https://example.com/graphic-design-1"
+  },
+  {
+    image: "assets/image/works-graphic-rocket.webp",
+    title: "Rocket",
+    date: "2024-01-18",
+    link: "https://example.com/graphic-design-1"
+  },
+  {
+    image: "assets/image/works-graphic-nano.webp",
+    title: "Nano",
+    date: "2024-01-19",
+    link: "https://example.com/graphic-design-2"
+  },
+  {
+    image: "assets/image/works-graphic-tokyo.webp",
+    title: "TOKYO FLASH",
+    date: "2023-09-08",
+    link: "https://example.com/graphic-design-2"
+  },
+  {
+    image: "assets/image/works-graphic-wave.webp",
+    title: "Wave",
+    date: "2023-10-02",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-butterfly.webp",
+    title: "Butterfly Effect",
+    date: "2024-03-23",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-soul.webp",
+    title: "Soul",
+    date: "2024-03-28",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-warp.webp",
+    title: "Warp",
+    date: "2023-09-21",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-japan.webp",
+    title: "江戸文化",
+    date: "2024-03-21",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-planet1.webp",
+    title: "Planet 1",
+    date: "2023-06-02",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-planet2.webp",
+    title: "Planet 2",
+    date: "2023-06-02",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-hightway.webp",
+    title: "Art Hightway",
+    date: "2023-03-20",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-spring.webp",
+    title: "Art Spring",
+    date: "2022-11-02",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-sand.webp",
+    title: "Art Sand",
+    date: "2023-03-23",
+    link: "https://example.com/graphic-design-3"
+  },
+  {
+    image: "assets/image/works-graphic-season.webp",
+    title: "Art Season",
+    date: "2022-08-08",
+    link: "https://example.com/graphic-design-3"
+  },
+];
+
 // どのリストを使うか判定
 let dataList = [];
 const cardsSection = document.querySelector('.cards');
@@ -556,6 +684,12 @@ if (cardsSection) {
   }
   else if (cardsSection.id === 'contest') {
     dataList = contest;
+  }
+  else if (cardsSection.id === 'project') {
+    dataList = project;
+  }
+  else if (cardsSection.id === 'graphic') {
+    dataList = graphic;
   }
   // 必要なら他のidも追加
 }
@@ -594,7 +728,7 @@ if (container && dataList.length > 0) {
     const len = title.textContent.length;
     if (len > 30) {
       title.style.letterSpacing = "0.8px";
-    } else if (len > 20) {
+    } else if (len > 15) {
       title.style.letterSpacing = "1.5px";
     } else {
       title.style.letterSpacing = "2.87px";
