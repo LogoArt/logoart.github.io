@@ -296,12 +296,6 @@ const logo = [
     date: "2023-04-16",
     link: "https://example.com/sunset-design"
   },
-  {
-    image: "assets/image/works-logo-fedex.webp",
-    title: "Fedex Remake",
-    date: "2023-04-16",
-    link: "https://example.com/sunset-design"
-  },
     {
     image: "assets/image/works-logo-xininty.webp",
     title: "Xininty",
@@ -672,6 +666,42 @@ const graphic = [
   },
 ];
 
+//Video
+const video = [
+  {
+    image: "assets/image/works-video-my-works.webp",
+    title: "My works",
+    date: "2025-02-26",
+    link: "https://www.youtube.com/watch?v=example1"
+  },
+  {
+    image: "assets/image/works-video-keion.webp",
+    title: "2024後夜祭",
+    date: "2024-10-27",
+    link: "https://www.youtube.com/watch?v=uPqIFvjs_D8"
+  },
+  {
+    image: "assets/image/works-video-logo-2023.webp",
+    title: "2023 Logo Collection",
+    date: "2025-02-04",
+    link: "https://www.instagram.com/reel/DF2X8PEz2Mx/"
+  },
+  {
+    image: "assets/image/works-logo-logoart.webp",
+    title: "Logo Art OP",
+    date: "2025-02-08",
+    link: "https://www.instagram.com/reel/DFzsbxOz-DM/"
+  },
+  {
+    image: "assets/image/works-logo-mountain.webp",
+    title: "Mountain",
+    date: "2025-02-08",
+    link: "https://www.instagram.com/reel/DFzfHNnTlC-/"
+  },
+
+]
+
+
 // どのリストを使うか判定
 let dataList = [];
 const cardsSection = document.querySelector('.cards');
@@ -690,6 +720,9 @@ if (cardsSection) {
   }
   else if (cardsSection.id === 'graphic') {
     dataList = graphic;
+  }
+  else if (cardsSection.id === 'video') {
+    dataList = video;
   }
   // 必要なら他のidも追加
 }
