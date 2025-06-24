@@ -760,7 +760,7 @@ font-style: normal;
 
 .works-card-image {
   width: 40%;
-  height: 180px;
+  height: 200px;
   background-color: #fff;
   margin-right: 40px;
   object-fit: cover;
@@ -772,7 +772,7 @@ font-style: normal;
 
 .works-card-content {
   flex: 1;
-  padding: 70px 0 70px 80px;
+  padding: 80px 0 80px 80px;
 }
 
 .works-card-title {
@@ -792,6 +792,12 @@ font-style: normal;
   background-color: #000;
   margin: 0 40px;
 }
+
+/* works.html */
+.works-footer-space {
+  height: 200px;
+}
+
 
 /* Cards */
 
