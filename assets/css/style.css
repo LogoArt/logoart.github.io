@@ -95,6 +95,20 @@ font-style: normal;
     transform: scaleX(1);
 }
 
+@media (max-width: 599px) {
+  .underline-hover {
+    text-decoration: none !important;
+    color: #000 !important;
+    background: none !important;
+    position: static !important;
+  }
+  .underline-hover::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+  }
+}
+
 /* ==================== Header ==================== */
 
 .header {
@@ -135,6 +149,16 @@ font-style: normal;
     pointer-events: auto;
 }
 
+@media (max-width: 999px) {
+  .header-logo img {
+    margin: 0;
+    width: 120px;
+    height: auto;
+    padding: 10px 0 0 30px;
+    transition: filter 0.3s ease;
+  }
+}
+
 /* ==================== Toggle Button ==================== */
 
 .toggle-button {
@@ -146,6 +170,18 @@ font-style: normal;
     height: 40px;
     z-index: 100;
     cursor: pointer;
+}
+@media (max-width: 999px) {
+  .toggle-button {
+    display: block;
+    position: fixed;
+    top: 27px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    cursor: pointer;
+  }
 }
 
 .toggle-button span {
@@ -213,6 +249,33 @@ font-style: normal;
     pointer-events: auto;
 }
 
+@media (max-width: 599px) {
+  .glass-menu {
+    width: 100vw;
+    right: -100vw;
+    z-index: 102;
+  }
+  .navArea.open .glass-menu {
+    right: 0;
+  }
+  .overlay {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: block;
+    pointer-events: auto;
+    z-index: 101;
+  }
+  .glass-menu ul li a {
+    margin-left: 1vw;
+    padding: 0;
+    font-size: 35px;
+    color: #000;
+    text-decoration: none;
+}
+}
+
 .navArea.open .glass-menu {
     right: 0;
 }
@@ -228,7 +291,7 @@ font-style: normal;
 }
 
 .glass-menu ul li a {
-    margin-left: 15vh;
+    margin-left: 10vw;
     font-size: 35px;
     color: #000;
     text-decoration: none;
@@ -526,12 +589,14 @@ font-style: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 0 0 80px;
+    padding: 4vh 0 0 4.7vw;
     flex: 1;
 }
 
-.footer .menu-list a {
-    font-size: 45px;
+.menu-list a {
+    display: block;
+    font-size: 2vw;
+    margin-bottom: 3vh;
 }
 
 .footer-left ul {
@@ -550,7 +615,7 @@ font-style: normal;
 
 .footer-logo {
     position: absolute;
-    bottom: 40px;
+    bottom: 3vh;
     left: 40px;
     width: 70px;
     height: auto;
@@ -558,7 +623,7 @@ font-style: normal;
 }
 
 .footer-logo img {
-    width: 100%;
+    width: 5vw;
     height: auto;
     display: block;
 }
@@ -572,7 +637,7 @@ font-style: normal;
     flex-direction: column;
     align-items: flex-end;
     font-size: 1vw;
-    gap: 4vh;
+    gap: 5vh;
 }
 
 .footer-right .label {
@@ -613,12 +678,70 @@ font-style: normal;
 
 .copyright {
     position: absolute;
-    bottom: 4vh;
+    bottom: 3vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.6vw;
     color: #000;
 }
+
+/* スマホ用（〜599px） */
+@media (max-width: 599px) {
+  .footer-logo {
+    bottom: 2vh;
+    left: 5vw;
+    width: 70px;
+    height: auto;
+    padding: 0;
+  }
+
+  .footer-logo img {
+    width: 70%;
+  }
+  .copyright {
+    bottom: 2vh;
+    font-size: 2vw;
+ }
+ .menu-list a {
+    display: block;
+    font-size: 5vw;
+}
+  .footer-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 2.5vw;
+    gap: 5vh;
+}
+.footer-right .label {
+    margin-bottom: 1vh;
+    font-size: 2vw;
+}
+}
+
+/* タブレット用（600px〜1023px） */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .menu-list a {
+    display: block;
+    font-size: 3vw;
+ }
+   .footer-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.5vw;
+    gap: 5vh;
+}
+}
+
 
 /* About Profile */
 .profile {
