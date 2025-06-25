@@ -426,15 +426,15 @@ font-style: normal;
 }
 
 .section-title {
-    font-size: 110px;
+    font-size: 8vw;
     margin: 0;
 }
 
 .section-tags {
     font-weight: 100;
     font-style: normal;
-    font-size: 50px;
-    letter-spacing: 12px;
+    font-size: 3vw;
+    letter-spacing: 0.6vw;
     margin: 0;
     padding-top: 50px;
     text-align: right;
@@ -654,18 +654,18 @@ font-style: normal;
 .profile-image {
   width: 440px;
   height: 480px;
-  overflow: hidden;           /* マスクするために必要 */
-  border-radius: 0;           /* 丸く切り抜かない場合 */
+  overflow: hidden;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;     /* プレースホルダ背景（任意） */
+  background-color: #000;
 }
 
 .profile-image img {
   width: 100%;
   height: auto;
-  object-fit: cover;          /* 縦横比を維持しつつトリミング */
+  object-fit: cover;
 }
 
 
@@ -854,9 +854,9 @@ font-style: normal;
 }
 
 .card-meta .title {
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 0.8vw;
   letter-spacing: 2.87px;
 }
 
@@ -875,4 +875,99 @@ font-style: normal;
 }
 .cards-container .card:hover {
   transform: scale(1.02);
+}
+
+/* ==================== Responsive ==================== */
+
+/* スマホ用（〜599px） */
+@media (max-width: 599px) {
+  .section-title h2 {
+    font-size: 20vw;;
+  }
+  .section-tags {
+    display: none;
+  }
+  .works-card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+  }
+  .works-card-image {
+    width: calc(100% - 20px);
+    height: 180px;
+    margin: 10px auto 20px auto;
+    display: block;
+    border-radius: 0;
+  }
+  .works-card-content {
+    padding: 0 10px 20px 10px;
+  }
+  .works-divider {
+    margin: 0 10px;
+  }
+  .works-card-title {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .works-card-text {
+    margin: 15px 0 0 0;
+    font-size: 2.2vw;;
+    padding-left: 10px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  .card .title {
+   font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  }
+  .card .label {
+   display: none;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* タブレット用（600px〜1023px） */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .section-title h2 {
+    font-size: 20vw;;
+  }
+  .section-tags {
+    display: none;
+  }
+  .works-card {
+    margin: 0 40px;
+  }
+  .works-card-image {
+    height: 160px;
+  }
+  .works-card-content {
+    padding: 40px 0 40px 40px;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  .card .title {
+   font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  }
+  .card .label {
+   display: none;
+  }
+  .card {
+    width: 100%;
+  }
 }
