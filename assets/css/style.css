@@ -772,10 +772,11 @@ font-style: normal;
 }
 
 .profile-title {
-  padding: 2hv 0.3vw 4vh 0.3vw;
-  font-size: 2vw;
+  margin: 2vh 1vw;
+  font-size: 3vw;
   font-weight: 300;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .profile-image {
@@ -819,11 +820,14 @@ font-style: normal;
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .profile-right {
+  max-width: 68vw;
+}
   .profile-title {
-    padding: 0 0 10px 0;
+    margin: 0;
+    padding: 0 0 10px 14vw;
     font-size: 6vw;
     margin-bottom: 10px;
-    text-align: center;
   }
     .profile-image {
     width: 70vw;
@@ -849,9 +853,9 @@ font-style: normal;
     letter-spacing: 0.5vw;
   }
   .profile-en, .profile-ja {
+    padding: 0;
     font-size: 3vw;
-    margin-bottom: 10px;
-    text-align: left;
+    margin-bottom: 10vh;
     letter-spacing: 0.2vw;
   }
 }
@@ -1100,7 +1104,7 @@ font-style: normal;
     padding: 20px;
   }
   .card .title {
-    font-size: 2.6vw;
+    font-size: 2.7vw;
   display: flex;
   align-items: center;
   padding-left: 1vw;
