@@ -750,7 +750,7 @@ font-style: normal;
 
 /* About Profile */
 .profile {
-  padding: 200px 155px 200px 200px;
+  padding: 150px 12vw 200px 12vw;
   box-sizing: border-box;
 }
 
@@ -758,36 +758,29 @@ font-style: normal;
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 155px;
-}
-
-.profile-right {
-  max-width: 800px;
+  justify-content: center;
+  gap: 9.23vw;
 }
 
 .profile-left {
-    width: 440px;
+    width: 26.19vw;
     flex-shrink: 0;
 }
 
+.profile-right {
+  max-width: 47.62vw;
+}
+
 .profile-title {
-  padding: 5px 0 10px 5px;
-  font-size: 32px;
-  margin-bottom: 20px;
-  font-family: din-condensed, sans-serif;
+  padding: 2hv 0.3vw 4vh 0.3vw;
+  font-size: 2vw;
   font-weight: 300;
   font-style: normal;
 }
 
 .profile-image {
-  width: 440px;
-  height: 480px;
+    width: 26.19vw;
   overflow: hidden;
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
 }
 
 .profile-image img {
@@ -796,26 +789,83 @@ font-style: normal;
   object-fit: cover;
 }
 
-
 .profile-name {
-  font-size: 74px;
-  margin: 40px 0;
-  font-family: din-condensed, sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-size: 4.40vw;
+  padding-bottom: 4vh;
+  font-weight: 0;
+  letter-spacing: 0.3vw;
 }
 
 .profile-en {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
+  font-size: 1.07vw;
+  line-height: 1.8;
+  margin-bottom: 2.38vw;
+  letter-spacing: 0.12vw;
 }
 .profile-ja {
-  font-size: 12px;
+  font-size: 0.71vw;
   line-height: 1.8;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  margin-bottom: 1.19vw;
+  letter-spacing: 0.12vw;
+}
+
+@media (max-width: 599px) {
+  .profile {
+    margin: 0;
+    padding: 30px 10px 30px 10px;
+  }
+  .profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .profile-title {
+    padding: 0 0 10px 0;
+    font-size: 6vw;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+    .profile-image {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+    .profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    }
+
+  .profile-name {
+    font-size: 7vw;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 0.5vw;
+  }
+  .profile-en, .profile-ja {
+    font-size: 3vw;
+    margin-bottom: 10px;
+    text-align: left;
+    letter-spacing: 0.2vw;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .profile {
+  padding: 150px 8vw 200px 8vw;
+  box-sizing: border-box;
+  }
+  .profile-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 9.23vw;
+}
 }
 
 /* Plofile info */
@@ -1050,6 +1100,7 @@ font-style: normal;
     padding: 20px;
   }
   .card .title {
+    font-size: 2.6vw;
   display: flex;
   align-items: center;
   padding-left: 1vw;
