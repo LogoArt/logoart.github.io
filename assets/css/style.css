@@ -41,6 +41,11 @@ button {
 .font-yu-mincho-pr6n {
     font-family: "yu-mincho-pr6n", sans-serif;
 }
+.font-zen-kaku-gothic {
+    font-family: zen-kaku-gothic-new, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
 
 .font-Linotype {
     font-family: "linotype-didot", serif;
@@ -972,12 +977,12 @@ font-style: normal;
 .card-meta .label {
   font-size: 14px;
   font-weight: normal;
-  margin-right: 60px;
+  margin-right: 2vw;
   flex-shrink: 0;
 }
 
 .card-meta .title {
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-weight: bold;
   margin: 0 0.8vw;
   letter-spacing: 2.87px;
@@ -1045,7 +1050,6 @@ font-style: normal;
     padding: 20px;
   }
   .card .title {
-   font-size: 2.5vw;
   display: flex;
   align-items: center;
   padding-left: 1vw;

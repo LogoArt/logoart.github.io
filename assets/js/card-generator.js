@@ -733,7 +733,7 @@ if (container && dataList.length > 0) {
   dataList.forEach(item => {
     // 日本語が含まれているか判定（ひらがな・カタカナ・漢字）
     const isJapanese = /[\u3040-\u30FF\u4E00-\u9FFF]/.test(item.title);
-    const metaClass = isJapanese ? 'card-meta font-Acumin-default font-yu-mincho-pr6n' : 'card-meta font-Acumin-default';
+    const metaClass = isJapanese ? 'card-meta font-Acumin-default font-zen-kaku-gothic' : 'card-meta font-Acumin-default';
 
     const card = document.createElement("div");
     card.className = "card";
@@ -755,16 +755,28 @@ if (container && dataList.length > 0) {
     container.appendChild(card);
   });
 
-  // タイトルの文字数に応じてletter-spacingを調整
+    // JA or EN
   const titles = container.querySelectorAll('.card-meta .title');
   titles.forEach(title => {
     const len = title.textContent.length;
-    if (len > 30) {
-      title.style.letterSpacing = "0.8px";
-    } else if (len > 15) {
-      title.style.letterSpacing = "1.5px";
+    // JA
+    const isJapanese = /[\u3040-\u30FF\u4E00-\u9FFF]/.test(title.textContent);
+    if (isJapanese) {
+      if (len > 30) {
+        title.style.letterSpacing = "0.2px";
+      } else if (len > 15) {
+        title.style.letterSpacing = "0.6px";
+      } else {
+        title.style.letterSpacing = "1.2px";
+      }
     } else {
-      title.style.letterSpacing = "2.87px";
+      if (len > 30) {
+        title.style.letterSpacing = "0.8px";
+      } else if (len > 15) {
+        title.style.letterSpacing = "1.5px";
+      } else {
+        title.style.letterSpacing = "2.87px";
+      }
     }
   });
 }
