@@ -84,12 +84,6 @@ const contest = [
     date: "2024-07-31",
     link: "https://example.com/sunset-design"
   },
-  {
-    image: "assets/image/works-contest-igg.webp",
-    title: "竹林",
-    date: "2024-10-12",
-    link: "https://example.com/contest-entry-3"
-  },
 ];
 //Project
 const project = [

@@ -62,21 +62,29 @@ function initScrollTopButton() {
   });
 }
 
-/* === 追加: Intersection Observerで.fade-up-waitを監視 & animation-delay自動付与（親トリガー方式） === */
-document.addEventListener('DOMContentLoaded', function() {
-  // 親要素（.contest-content, .profile-info など）を監視し、子.fade-up-waitに順delay＋fade-upを付与
-  document.querySelectorAll('.contest-content, .profile-info, .profile').forEach(parent => {
+function initFadeUpObserver() {
+  document.querySelectorAll('.contest-content, .profile-info, .profile, .menu-list, .note').forEach(parent => {
     const children = parent.querySelectorAll('.fade-up-wait');
     if (!children.length) return;
+    let threshold = parent.classList.contains('menu-list') || parent.classList.contains('note') ? 0.2 : 0.5;
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.intersectionRatio >= threshold) {
           setFadeUpAnimation(children);
+          // profile-image拡大アニメーション
+          const image = parent.querySelector('.profile-image');
+          if (image && !image.classList.contains('profile-image-zoom')) {
+            image.classList.add('profile-image-zoom');
+          }
+          // profile-rightフェードインアニメーション
+          const right = parent.querySelector('.profile-right');
+          if (right && !right.classList.contains('profile-right-fade')) {
+            right.classList.add('profile-right-fade');
+          }
           obs.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: [threshold] });
     observer.observe(parent);
   });
-});
-/* === ↑ここまで自動追加 === */
+}

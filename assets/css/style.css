@@ -115,28 +115,6 @@ font-style: normal;
   }
 }
 
-/* ==================== Fade Up Animation Utility ==================== */
-@keyframes menu-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: none;
-  animation: menu-fade-up 0.5s cubic-bezier(0.4,0,0.2,1) forwards;
-}
-.fade-up-wait {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
 /* ==================== Header ==================== */
 
 .header {
@@ -895,8 +873,8 @@ font-style: normal;
 .profile-info p,
 .profile-info ul {
     margin-left: 40vw;
-    font-size: 0.8vw;
-    line-height: 1.8;
+    font-size: 0.9vw;
+    line-height: 1.9;
     max-width: 45vw; 
 }
 .info-bottom {
@@ -916,7 +894,7 @@ font-style: normal;
   margin-bottom: 1vh;
 }
 
-.note {
+.note p {
   font-size: 0.6vw;
   margin: -0.6vw 0 2vh 0.6vw;
   color: #444;
@@ -962,7 +940,7 @@ font-style: normal;
   .profile-info ul li {
     margin-bottom: 2vw;
   }
-  .note {
+  .note p {
     font-size: 2vw;
     margin: 2vw 0 4vw 0;
     color: #444;
@@ -1201,4 +1179,67 @@ font-style: normal;
   .card {
     width: 100%;
   }
+}
+
+
+/* ==================== Fade Animation ==================== */
+@keyframes menu-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: none;
+  animation: menu-fade-up 0.6s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+.fade-up-wait {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+
+/* ==================== Zoom in ==================== */
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.zoom-in {
+  animation: zoom-in 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+/* ==================== Fade in ==================== */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in {
+  animation: fade-in 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.footer, .footer-left, .menu-list, .menu-list li, .menu-list a {
+  overflow: visible;
+  position: relative;
 }

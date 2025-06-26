@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // footer 読み込み（初期化不要ならそのままでOK）
-  includeElement("#footer", "footer.html");
+  includeElement("#footer", "footer.html", () => {
+    if (typeof initFadeUpObserver === "function") initFadeUpObserver();
+  });
 });
 
 //About Profile boderline
