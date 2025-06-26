@@ -480,7 +480,7 @@ font-style: normal;
 }
 
 .section-title {
-    font-size: 8vw;
+    font-size: clamp(32px, 8vw, 100px);
     margin: 0;
 }
 

@@ -65,7 +65,7 @@ function initScrollTopButton() {
 /* === 追加: Intersection Observerで.fade-up-waitを監視 & animation-delay自動付与（親トリガー方式） === */
 document.addEventListener('DOMContentLoaded', function() {
   // 親要素（.contest-content, .profile-info など）を監視し、子.fade-up-waitに順delay＋fade-upを付与
-  document.querySelectorAll('.contest-content, .profile-info').forEach(parent => {
+  document.querySelectorAll('.contest-content, .profile-info, .profile').forEach(parent => {
     const children = parent.querySelectorAll('.fade-up-wait');
     if (!children.length) return;
     const observer = new IntersectionObserver((entries, obs) => {
