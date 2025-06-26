@@ -20,3 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // footer 読み込み（初期化不要ならそのままでOK）
   includeElement("#footer", "footer.html");
 });
+
+//About Profile boderline
+document.addEventListener('DOMContentLoaded', function() {
+  const targets = document.querySelectorAll('.profile-info');
+  const options = { threshold: 0.1 };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('inview-border');
+      }
+    });
+  }, options);
+  targets.forEach(target => observer.observe(target));
+});
