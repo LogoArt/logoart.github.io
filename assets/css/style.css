@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    margin: 0;
     height: 100%;
     font-family: "acumin-variable", sans-serif, "Helvetica Neue", "Hiragino Sans", "Yu Gothic", sans-serif;
     font-size: 15px;
@@ -88,7 +89,7 @@ font-style: normal;
     position: absolute;
     left: 0;
     bottom: -4px;
-    width: 100%;
+    width: 30%;
     height: 2px;
     background-color: #000;
     transform: scaleX(0);
@@ -320,6 +321,37 @@ font-style: normal;
 .no-scroll {
     overflow: hidden;
 }
+
+@keyframes menu-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.glass-menu ul li a {
+    opacity: 0;
+  transform: translateY(30px);
+  transition: none;
+  display: block;
+}
+
+.navArea.open .glass-menu ul li a {
+  animation: menu-fade-up 0.5s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+.navArea.open .glass-menu ul li:nth-child(1) a { animation-delay: 0.45s; }
+.navArea.open .glass-menu ul li:nth-child(2) a { animation-delay: 0.50s; }
+.navArea.open .glass-menu ul li:nth-child(3) a { animation-delay: 0.55s; }
+.navArea.open .glass-menu ul li:nth-child(4) a { animation-delay: 0.60s; }
+.navArea.open .glass-menu ul li:nth-child(5) a { animation-delay: 0.65s; }
+/* 必要に応じてli数を増やしてください */
+
+
 
 /* ==================== Hero Section ==================== */
 
