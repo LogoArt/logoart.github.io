@@ -52,70 +52,51 @@
     <div id="header"></div>
 
     <!-- ==================== Hero ==================== -->
-    <section class="index-hero" id="index">
-        <div class="swiper index-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/image/here-img-1.webp" alt="KNOCK Slide">
-                    <div class="slide-caption">KNOCK - 感性を刺激する強いノック . 2024</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image/here-img-2.webp" alt="AAC Slide">
-                    <div class="slide-caption">AAC - 記憶が生み出す新しい形 . 2023</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image/here-img-3.webp" alt="JINDAI Slide">
-                    <div class="slide-caption">神代附属 - 2025フライヤー . 2024</div>
-                </div>
-            </div>
-            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="previous"></div>
-            <div class="swiper-button-next" tabindex="0" role="button" aria-label="next"></div>
-            <div class="swiper-pagination" tabindex="0" role="navigation" aria-label="select"></div>
+    <section class="index-hero">
+        <div class="index-video">
+             <video autoplay loop muted preload>
+                  <source src="./assets/video/Web-video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-glass"></div>
         </div>
-        <div class="index-title font-Linotype">
-            <strong>Tatsumi Nakanishi<br>, Portfolio</strong>
+        <div class="index-title fade-in font-Linotype">
+              <strong>Tatsumi Nakanishi<br>, Portfolio</strong>
         </div>
     </section>
 
     <div class="here-video">
         <video autoplay loop muted preload>
-            <source src="./assets/video/00000.mp4" type="video/mp4">
+            <source src="./assets/video/000.mp4" type="video/mp4">
         </video>
     </div>
 
     <!-- ==================== Index Profile ==================== -->
     <section class="index-profile" id="index-profile">
-        <div class="rect-left"></div>
-        <div class="index-profile-container">
-            <div class="index-profile-photo">
-                <img src="./assets/image/profile-img.png" alt="Profile Photo">
-            </div>
-            <div class="index-profile-text">
                 <div class="index-profile-header">
-                    <h1 class="index-profile-hello font-Acumin-default">Hello</h1>
+                    <h1 class="index-profile-hello fade-up-wait fade-repeat font-Acumin-default">Hello</h1>
                     <a href="about.html#profile" class="index-profile-button">PROFILE＋</a>
                 </div>
-                <p class="index-profile-des-en font-Acumin-default">
-                    My name is Tatsumi Nakanishi, <br>
-                    a high school student with a passion for<br>
-                    bringing ideas to life.<br>
-                    My creative drive goes beyond posters and<br>
-                    logos—I've taken on roles in art direction for<br>
-                    school festivals and music groups,explored<br>
-                    game development, and even joined business<br>
-                    competitions.<br>
-                    I’m always eager to explore new forms of<br>
-                    expression and push my creative boundaries.
-                </p>
-                <p class="index-profile-des-ja font-yu-mincho-pr6n">
-                    中西達海と申します。アイディアを形にするのが大好きな高校生です。<br>
-                    私の熱い制作意欲はポスターやロゴなどのデザイン領域に収まらず、文化祭や軽音グループの<br>
-                    アートディレクション、ゲーム制作やビジネスコンテストなど、様々な分野に挑戦してきました。<br>
-                    私はこれからも新しい表現を探求し続けます。
-                </p>
-            </div>
+                <div class="index-profile-text">
+                    <p class="index-profile-des-en font-Acumin-default">
+                        My name is Tatsumi Nakanishi, <br>
+                        a high school student with a passion for<br>
+                        bringing ideas to life.<br>
+                        My creative drive goes beyond posters and<br>
+                        logos—I've taken on roles in art direction for<br>
+                        school festivals and music groups,explored<br>
+                        game development, and even joined business<br>
+                        competitions.<br>
+                        I’m always eager to explore new forms of<br>
+                        expression and push my creative boundaries.
+                    </p>
+                    <p class="index-profile-des-ja font-yu-mincho-pr6n">
+                        中西達海と申します。アイディアを形にするのが大好きな高校生です。<br>
+                        私の熱い制作意欲はポスターやロゴなどのデザイン領域に収まらず、文化祭や軽音グループの<br>
+                        アートディレクション、ゲーム制作やビジネスコンテストなど、様々な分野に挑戦してきました。<br>
+                        私はこれからも新しい表現を探求し続けます。
+                    </p>
+                </div>
         </div>
-        <div class="rect-right"></div>
     </section>
 
     <!-- ==================== Works ==================== -->
@@ -182,6 +163,7 @@
     <script src="./assets/js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/index-swiper.js"></script>
+    <script src="./assets/js/hero-video-effect.js"></script>
 
 </body>
 
