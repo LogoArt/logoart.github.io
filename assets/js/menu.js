@@ -45,16 +45,13 @@ function initMenu() {
 
 function initScrollTopButton() {
   const topButton = document.querySelector(".top-button");
-  const profile = document.querySelector("#profile");
+  if (!topButton) return;
 
-  if (!topButton || !profile) return;
-
-  const profileOffsetTop = profile.offsetTop;
-
+  // スクロールイベントのたびにウィンドウ高さ分を超えたら表示
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
-
-    if (scrollY >= profileOffsetTop - 100) {
+    const triggerY = window.innerHeight; // ファーストビューの高さ
+    if (scrollY >= triggerY) {
       topButton.classList.add("visible");
     } else {
       topButton.classList.remove("visible");

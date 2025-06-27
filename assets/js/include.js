@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   includeElement("#header", "header.html", () => {
     initMenu();               // ハンバーガーメニュー動作
     initScrollTopButton();    // スクロールに応じてtop-button表示
+    window.addEventListener('resize', initScrollTopButton); // ウィンドウサイズ変更時にも再初期化
   });
 
   // footer 読み込み（初期化不要ならそのままでOK）
