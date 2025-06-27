@@ -63,11 +63,12 @@ function initScrollTopButton() {
 }
 
 function initFadeUpObserver() {
+  // 親監視
   document.querySelectorAll('.contest-content, .profile-info, .profile, .menu-list, .note').forEach(parent => {
     const children = parent.querySelectorAll('.fade-up-wait');
     if (!children.length) return;
     let threshold = parent.classList.contains('menu-list') || parent.classList.contains('note') ? 0.2 : 0.5;
-    const observer = new IntersectionObserver((entries, obs) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting && entry.intersectionRatio >= threshold) {
           setFadeUpAnimation(children);
@@ -81,10 +82,34 @@ function initFadeUpObserver() {
           if (right && !right.classList.contains('profile-right-fade')) {
             right.classList.add('profile-right-fade');
           }
-          obs.unobserve(entry.target);
+        } else if (!entry.isIntersecting) {
+          // fade-repeatクラスが付いている場合のみリセット
+          children.forEach(child => {
+            if (child.classList.contains('fade-repeat')) {
+              resetFadeUpAnimation([child]);
+            }
+          });
         }
       });
     }, { threshold: [threshold] });
     observer.observe(parent);
+  });
+
+  // fade-up-wait単体監視（親監視済みは除外）
+  document.querySelectorAll('.fade-up-wait').forEach(el => {
+    if (el.closest('.contest-content, .profile-info, .profile, .menu-list, .note')) return;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setFadeUpAnimation([entry.target]);
+        } else if (!entry.isIntersecting) {
+          // fade-repeatクラスが付いている場合のみリセット
+          if (entry.target.classList.contains('fade-repeat')) {
+            resetFadeUpAnimation([entry.target]);
+          }
+        }
+      });
+    }, { threshold: [0.2] });
+    observer.observe(el);
   });
 }
