@@ -178,7 +178,7 @@ font-style: normal;
   width: 40px;
   height: 40px;
   z-index: 100;
-  cursor: pointer;
+  cursor:crosshair;
 }
 @media (max-width: 999px) {
   .toggle-button {
@@ -368,6 +368,7 @@ font-style: normal;
 }
 
 .index-profile-text {
+  margin: 10vh 0 30vh 30vw;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -381,13 +382,13 @@ font-style: normal;
 }
 
 .index-profile-hello {
-    font-size: 162px;
-    margin: 0;
+    font-size: 10vw;
+    margin-left:20vw ;
     line-height: 1;
 }
 
 .index-profile-button {
-    padding-right: 120px;
+    padding-right: 20vw;
     font-size: 12px;
     text-decoration: none;
     margin-left: 20px;
@@ -406,7 +407,7 @@ font-style: normal;
 .index-profile-des-en {
     font-size: 30px;
     line-height: 1.4;
-    margin-top: 20px;
+    margin-bottom: 10vh;
     letter-spacing: 4px;
 }
 
