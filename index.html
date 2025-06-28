@@ -48,19 +48,17 @@
 
 <body>
 
-    <!-- ==================== 背景動画（全体固定） ==================== -->
-    <div class="fixed-bg-video">
-        <video autoplay loop muted preload>
-            <source src="./assets/video/Web-video.mp4" type="video/mp4">
-        </video>
-        <div class="overlay-glass"></div>
-    </div>
-
     <!-- ==================== Header ==================== -->
     <div id="header"></div>
 
     <!-- ==================== Hero ==================== -->
     <section class="index-hero">
+        <div class="fixed-bg-video">
+            <video autoplay loop muted preload>
+                <source src="./assets/video/Web-video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-glass"></div>
+        </div>
         <div class="index-title fade-in font-Linotype">
               <strong>Tatsumi Nakanishi<br>, Portfolio</strong>
         </div>
@@ -93,11 +91,6 @@
                     </p>
                 </div>
         </div>
-    </section>
-
-
-    <section class="video-mask">
-        <div class="video-mask-overlay"></div>
     </section>
 
     <!-- ==================== Works ==================== -->

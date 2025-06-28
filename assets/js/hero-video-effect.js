@@ -1,4 +1,4 @@
-// スクロール量に応じてガラス効果と明るさを調整
+// スクロール量に応じてガラス効果と明るさを調整（フェードアウトは廃止）
 window.addEventListener('DOMContentLoaded', function() {
   // 新しい固定背景動画とエフェクト用要素を取得
   const video = document.querySelector('.fixed-bg-video video');
@@ -30,13 +30,9 @@ window.addEventListener('DOMContentLoaded', function() {
     const profileRect = profile.getBoundingClientRect();
     const videoBox = document.querySelector('.fixed-bg-video');
     if (!videoBox) return;
-    if (profileRect.bottom <= 0) {
-      videoBox.style.opacity = '0';
-      videoBox.style.pointerEvents = 'none';
-    } else {
-      videoBox.style.opacity = '1';
-      videoBox.style.pointerEvents = 'auto';
-    }
+    // フェードアウトは行わず、常に表示・pointerEventsも固定
+    videoBox.style.opacity = '1';
+    videoBox.style.pointerEvents = 'auto';
   }
 
   window.addEventListener('scroll', updateEffect);
@@ -47,3 +43,4 @@ window.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', toggleVideoFixed);
   toggleVideoFixed();
 });
+
