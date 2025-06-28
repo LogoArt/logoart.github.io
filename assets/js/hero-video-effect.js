@@ -1,7 +1,8 @@
 // スクロール量に応じてガラス効果と明るさを調整
 window.addEventListener('DOMContentLoaded', function() {
-  const video = document.querySelector('.index-video video');
-  const glass = document.querySelector('.index-video .overlay-glass');
+  // 新しい固定背景動画とエフェクト用要素を取得
+  const video = document.querySelector('.fixed-bg-video video');
+  const glass = document.querySelector('.fixed-bg-video .overlay-glass');
   const hero = document.querySelector('.index-hero');
   const profile = document.querySelector('.index-profile');
 
@@ -27,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   function toggleVideoFixed() {
     const profileRect = profile.getBoundingClientRect();
-    const videoBox = document.querySelector('.index-video');
+    const videoBox = document.querySelector('.fixed-bg-video');
     if (!videoBox) return;
     if (profileRect.bottom <= 0) {
       videoBox.style.opacity = '0';
@@ -46,4 +47,3 @@ window.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', toggleVideoFixed);
   toggleVideoFixed();
 });
-
