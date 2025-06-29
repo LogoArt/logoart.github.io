@@ -372,6 +372,11 @@ font-style: normal;
   mix-blend-mode: difference;
   filter: brightness(5);
 }
+.index-title.safari-title {
+  mix-blend-mode: normal;
+  filter: none;
+  color: #ffffff; /* 必要に応じて他の色も */
+}
 
 @media (max-width: 599px) {
   .index-title {
@@ -674,6 +679,7 @@ font-style: normal;
 .swiper-button-prev,
 .swiper-button-next {
   margin: 0 10px;
+  z-index: 30;
 }
 .swiper-name {
   margin-bottom: 2vh;

@@ -54,8 +54,8 @@
     <!-- ==================== Hero ==================== -->
     <section class="index-hero">
         <div class="fixed-bg-video">
-            <video autoplay loop muted preload>
-                <source src="./assets/video/Web-video.mp4" type="video/mp4">
+            <video autoplay loop muted playsinline preload="auto">
+             <source src="./assets/video/Web-video.mp4" type="video/mp4">
             </video>
             <div class="overlay-glass"></div>
         </div>
@@ -134,6 +134,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/hero-video-effect.js"></script>
     <script src="./assets/js/swiper-init.js"></script> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const ua = navigator.userAgent;
+        const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+        if (isSafari) {
+        const title = document.querySelector('.index-title');
+        if (title) {
+            title.classList.add('safari-title');
+        }
+        }
+    });
+    </script>
 
 </body>
 
