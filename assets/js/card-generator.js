@@ -362,11 +362,11 @@ const logo = [
     date: "2023-04-30",
     link: "https://dribbble.com/shots/25567828-Logo-V-A-Bridge"
   },
-    {
-    image: "assets/image/works-logo-z-green.webp",
-    title: "Logo Z-Leaf",
-    date: "2022-12-24",
-    link: "https://dribbble.com/shots/24735957-Logo-Letter-Z-Leaf"
+  {
+    image: "assets/image/works-logo-in4.webp",
+    title: "in4",
+    date: "2023-08-23",
+    link: "https://dribbble.com/shots/25572020-Logo-In4"
   },
     {
     image: "assets/image/works-logo-jm.webp",
@@ -392,6 +392,12 @@ const logo = [
     date: "2023-01-15",
     link: "https://dribbble.com/shots/24770564-Logo-W-B"
   },
+      {
+    image: "assets/image/works-logo-z-green.webp",
+    title: "Logo Z-Leaf",
+    date: "2022-12-24",
+    link: "https://dribbble.com/shots/24735957-Logo-Letter-Z-Leaf"
+  },
     {
     image: "assets/image/works-logo-k-pink.webp",
     title: "Logo K-pink",
@@ -409,12 +415,6 @@ const logo = [
     title: "First wave",
     date: "2022-05-07",
     link: "https://dribbble.com/shots/24719870-Logo-firstwave"
-  },
-    {
-    image: "assets/image/works-logo-in4.webp",
-    title: "in4",
-    date: "2023-08-23",
-    link: "https://dribbble.com/shots/25572020-Logo-In4"
   },
     {
     image: "assets/image/works-logo-n-pen.webp",
