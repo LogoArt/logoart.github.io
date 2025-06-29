@@ -132,43 +132,43 @@ const logo = [
     image: "assets/image/works-logo-laitier.webp",
     title: "Litier",
     date: "2023-02-16",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980457-Branding-LAITIER"
   },
   {
     image: "assets/image/works-logo-zeck.webp",
     title: "ZECK",
     date: "2024-08-22",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25572458-Branding-ZECK"
   },
   {
     image: "assets/image/works-logo-rsaw.webp",
     title: "Rising Arrow",
     date: "2024-07-12",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25572541-Branding-Rising-Arrow"
   },
   {
     image: "assets/image/works-logo-airy.webp",
     title: "AIRY",
     date: "2023-12-10",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25572224-Branding-AIRY"
   },
   {
     image: "assets/image/works-logo-palxea.webp",
     title: "Palxea",
     date: "2023-08-08",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982448-Branding-Palxea"
   },
   {
     image: "assets/image/works-logo-trackrock.webp",
     title: "Track Rock",
     date: "2024-09-28",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982824-Logo-TRACK-ROCK"
   },
   {
     image: "assets/image/works-logo-rht.webp",
     title: "RIHITO",
     date: "2024-04-15",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25572297-Branding-RIHITO"
   },
     {
     image: "assets/image/works-logo-planet.webp",
@@ -180,55 +180,55 @@ const logo = [
     image: "assets/image/works-logo-m10.webp",
     title: "M10",
     date: "2024-11-28",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982397-Logo-M10"
   },
   {
     image: "assets/image/works-logo-shiraga.webp",
     title: "KAZUO SHIRAGA",
     date: "2024-01-24",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/26207801-Logo-Shiraga-Kazuo"
   },
   {
     image: "assets/image/works-logo-300.webp",
     title: "300",
     date: "2024-07-20",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982327-Logo-LogoArt-300"
   },
     {
     image: "assets/image/works-logo-kinetic.webp",
     title: "KINETIC",
     date: "2024-01-21",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25572232-Branding-KINETIC"
   },
   {
     image: "assets/image/works-logo-gk.webp",
-    title: "GK",
+    title: "G.K.",
     date: "2023-10-28",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/26207695-Branding-G-K"
   },
     {
     image: "assets/image/works-logo-abobo.webp",
     title: "Abobo",
     date: "2024-08-07",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982531-Branding-Abobo"
   },
     {
     image: "assets/image/works-logo-nai'a.webp",
     title: "Ni'a Air plain",
     date: "2024-04-23",
-    link: "https://dribbble.com/shots/25388253-Branding-for-Nai-a-Airlines"
+    link: "https://dribbble.com/shots/25982352-Branding-Nai-a-Airlines"
   },
   {
     image: "assets/image/works-logo-logo.webp",
     title: "L・O・G・O",
     date: "2023-06-29",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25983118-Logo-logo"
   },
   {
     image: "assets/image/works-logo-sihouk.webp",
     title: "Sihouk",
     date: "2023-08-20",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982498-Branding-SIHOUK"
   },
       {
     image: "assets/image/works-logo-logoart.webp",
@@ -240,193 +240,193 @@ const logo = [
     image: "assets/image/works-logo-boat.webp",
     title: "Boat",
     date: "2023-04-01",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980867-Branding-BOAT"
   },
   {
     image: "assets/image/works-logo-in.webp",
     title: "In",
     date: "2024-08-28",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982409-Logo-in"
   },
     {
     image: "assets/image/works-logo-h-line.webp",
     title: "Logo H-line",
     date: "2021-07-25",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980335-Logo-Letter-H-Line"
   },
   {
     image: "assets/image/works-logo-pen.webp",
     title: "Pen",
     date: "2023-04-02",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25986870-Logo-Pen"
   },
   {
     image: "assets/image/works-logo-romia.webp",
     title: "Romia",
     date: "2023-05-26",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982563-Branding-Crazy-Romia"
   },
   {
     image: "assets/image/works-logo-scratch.webp",
-    title: "Scratch Code",
+    title: "Scratch Design",
     date: "2022-11-10",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980924-Logo-SCRATCH-DESIGN"
   },
   {
     image: "assets/image/works-logo-k-line.webp",
     title: "Logo K-line",
     date: "2021-07-25",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980112-Logo-LetterK-Line"
   },
   {
     image: "assets/image/works-logo-mountain.webp",
     title: "Mountain",
     date: "2021-06-19",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980106-Logo-Mountain"
   },
   {
     image: "assets/image/works-logo-fedex.webp",
     title: "Fedex Remake",
     date: "2023-04-16",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980502-Rebranding-FedEx"
   },
     {
     image: "assets/image/works-logo-xininty.webp",
     title: "Xininty",
     date: "2023-08-20",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982362-Branding-Xininty"
   },
     {
     image: "assets/image/works-logo-jep.webp",
     title: "Jepcal",
     date: "2023-08-20",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982359-Branding-Jepcal"
   },
     {
     image: "assets/image/works-logo-r.webp",
     title: "Logo R-bird",
     date: "2022-08-20",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980154-Logo-Letter-R"
   },
     {
     image: "assets/image/works-logo-area.webp",
     title: "Area",
     date: "2023-08-29",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982587-Branding-AREA-Eco-System"
   },
     {
     image: "assets/image/works-logo-a-rose.webp",
     title: " Logo A-rose",
     date: "2023-08-29",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24742832-Logo-Letter-A-Rose"
   },
     {
     image: "assets/image/works-logo-sphere.webp",
     title: "Sphere",
     date: "2023-04-10",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24870331-Logo-SPHERE"
   },
     {
     image: "assets/image/works-logo-ts.webp",
     title: "Logo T+S",
     date: "2023-02-07",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980396-Logo-T-S-Glasses"
   },
     {
     image: "assets/image/works-logo-tiger.webp",
     title: "Tiger",
     date: "2023-01-07",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25980392-Logo-Tiger"
   },
     {
     image: "assets/image/works-logo-w.webp",
     title: "Logo W",
     date: "2023-01-15",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/26207620-Logo-W-Golden-ratio"
   },
     {
     image: "assets/image/works-logo-mimic.webp",
     title: "Mimic",
     date: "2023-05-15",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25532111-Logo-MimicArt"
   },
     {
     image: "assets/image/works-logo-d-sail.webp",
     title: "Logo D-sail",
     date: "2023-04-25",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25532104-Logo-Letter-D-Sail"
   },
     {
     image: "assets/image/works-logo-va.webp",
     title: "Logo V+A",
     date: "2023-04-30",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25567828-Logo-V-A-Bridge"
   },
     {
     image: "assets/image/works-logo-z-green.webp",
-    title: "Logo Z-green",
+    title: "Logo Z-Leaf",
     date: "2022-12-24",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24735957-Logo-Letter-Z-Leaf"
   },
     {
     image: "assets/image/works-logo-jm.webp",
     title: "Logo J+M",
     date: "2023-04-02",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24783865-Logo-J-M"
   },
     {
     image: "assets/image/works-logo-heart.webp",
     title: "Heart",
     date: "2024-09-17",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/26207708-Icon-Heart"
   },
     {
     image: "assets/image/works-logo-record.webp",
     title: "Record",
     date: "2023-09-17",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/26207710-Icon-record"
   },
     {
     image: "assets/image/works-logo-wb.webp",
     title: "Logo W+B",
     date: "2023-01-15",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24770564-Logo-W-B"
   },
     {
     image: "assets/image/works-logo-k-pink.webp",
-    title: "Logo W+B",
+    title: "Logo K-pink",
     date: "2023-01-11",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24726401-Logo-Letter-K-Pink"
   },
     {
     image: "assets/image/works-logo-s-snake.webp",
     title: "Logo S-snake",
     date: "2021-12-24",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24750591-Logo-S-snake"
   },
     {
     image: "assets/image/works-logo-firstwave.webp",
     title: "First wave",
     date: "2022-05-07",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24719870-Logo-firstwave"
   },
     {
     image: "assets/image/works-logo-in4.webp",
     title: "in4",
     date: "2023-08-23",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25572020-Logo-In4"
   },
     {
     image: "assets/image/works-logo-n-pen.webp",
     title: "Logo N-pen",
     date: "2022-12-31",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24693323-Logo-N-Pen"
   },
     {
     image: "assets/image/works-logo-kusu-cafe2.webp",
-    title: "KUSUNOKI CAFE 2",
+    title: "CAFE tree",
     date: "2022-12-31",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/24693242-Cafe-tree"
   },
 ]
 
@@ -526,13 +526,13 @@ const typography = [
     image: "assets/image/works-typo-exist.webp",
     title: "Exist",
     date: "2025-05-05",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25982339-Typography-Exist"
   },
   {
     image: "assets/image/works-typo-logo.webp",
     title: "L/O/G/O",
     date: "2024-07-20",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25982333-Typography-LOGO"
   },
   {
     image: "assets/image/works-typo-wave.webp",
@@ -626,7 +626,7 @@ const graphic = [
     image: "assets/image/works-graphic-planet1.webp",
     title: "Planet 1",
     date: "2023-06-02",
-    link: "https://example.com/graphic-design-3"
+    link: "https://dribbble.com/shots/25982505-Branding-Planet"
   },
   {
     image: "assets/image/works-graphic-planet2.webp",
