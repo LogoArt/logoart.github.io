@@ -448,13 +448,13 @@ const typography = [
     image: "assets/image/works-typo-nenga.webp",
     title: "Pop 2025",
     date: "2024-08-12",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25986894-Typography-New-yaer-Japan"
   },
   {
-    image: "assets/image/works-typo-valuein.webp",
-    title: "Font Valuein",
+    image: "assets/image/works-typo-valassca.webp",
+    title: "Font Valassca",
     date: "2024-07-20",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983631-Font-Valassca"
   },
   {
     image: "assets/image/works-typo-marupop.webp",
@@ -472,13 +472,13 @@ const typography = [
     image: "assets/image/works-typo-almaq.webp",
     title: "Font Almaq",
     date: "2023-07-25",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983455-Font-Almaq"
   },
   {
     image: "assets/image/works-typo-clip.webp",
     title: "Font Clip",
     date: "2024-04-03",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983541-Font-Clip"
   },
     {
     image: "assets/image/works-typo-ukiyoe.webp",
@@ -496,31 +496,31 @@ const typography = [
     image: "assets/image/works-typo-typo-classic.webp",
     title: "Typography Classic",
     date: "2023-05-05",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983213-Typography-Classic"
   },
   {
     image: "assets/image/works-typo-typo-jp.webp",
     title: "タイポグラフィ",
     date: "2023-05-05",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983213-Typography-Classic"
   },
   {
     image: "assets/image/works-typo-kotoba.webp",
     title: "言葉のデザイン",
     date: "2023-05-05",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983213-Typography-Classic"
   },
   {
     image: "assets/image/works-typo-word.webp",
     title: "Word Classic",
     date: "2023-05-05",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983213-Typography-Classic"
   },
   {
     image: "assets/image/works-typo-design.webp",
     title: "デザイン",
     date: "2023-05-05",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983213-Typography-Classic"
   },
   {
     image: "assets/image/works-typo-exist.webp",
@@ -538,7 +538,7 @@ const typography = [
     image: "assets/image/works-typo-wave.webp",
     title: "WAVE",
     date: "2024-07-20",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983020-Typography-Wave"
   },
     {
     image: "assets/image/works-typo-scratch'70.webp",
