@@ -222,6 +222,18 @@ font-style: normal;
 }
 .navArea.open { pointer-events: auto; }
 
+.glass-menu,
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+.navArea.open .glass-menu,
+.navArea.open .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .glass-menu {
   position: absolute;
   top: 0;
@@ -294,50 +306,14 @@ font-style: normal;
 .navArea.open .overlay { display: block; }
 .no-scroll { overflow: hidden; }
 
-/* ==================== 固定背景動画 ==================== */
-.fixed-bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-  transition: opacity 0.4s;
-}
-.fixed-bg-video.hide {
-  pointer-events: none;
-}
-.fixed-bg-video video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  filter: brightness(1) blur(0px);
-  transition: filter 0.4s;
-}
-
-.fixed-bg-video .overlay-glass {
-  position: absolute;
-  top: 0; left: 0; width: 100vw; height: 100vh;
-  pointer-events: none;
-  z-index: 1;
-  background: rgba(255,255,255,0.02);
-  backdrop-filter: blur(0px) brightness(1);
-  transition: backdrop-filter 0.4s, background 0.4s;
-}
-
-
 /* ==================== Hero Section ==================== */
 .index-hero {
   width: 100vw;
   height: 100vh;
+  margin-bottom:40vh;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  margin-bottom: 50vh;
 }
 
 .fixed-bg-video {
@@ -373,6 +349,7 @@ font-style: normal;
 
 .fixed-bg-video .overlay-glass {
   position: absolute;
+  pointer-events: none;
   top: 0; left: 0; width: 100vw; height: 100vh;
   pointer-events: none;
   z-index: 1;
@@ -400,56 +377,12 @@ font-style: normal;
 
 
 .index-swiper {
-    height: 80vh;
-    width: 100%;
+    height: 40vh;
+    width: 40%;
     position: relative;
     overflow: hidden;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slide-caption {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    font-size: 12px;
-    color: #000;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    color: #000;
-    width: 5px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 30px;
-}
-
-.swiper-button-prev {
-    left: 30px;
-}
-
-.swiper-button-next {
-    right: 30px;
-}
-
-.swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #000;
-    opacity: 1; 
+    margin: 0;
+    z-index: 50;
 }
 
 /* === Index Section === */
@@ -459,6 +392,7 @@ font-style: normal;
     padding: 0;
     width: 100%;
     color: #fff;
+    z-index: 8;
 }
 
 .index-profile-text {
@@ -488,13 +422,13 @@ font-style: normal;
   margin-left: 20px;
   letter-spacing: 1px;
   color: #fff;
-  transition: filter 1s ease, transform 1s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 20;
+  pointer-events: auto;
   display: inline-block;
 }
 .index-profile-button:hover {
-  transform: scale(1.2);
+  color: #eee;
 }
 
 .index-profile-text {
@@ -550,6 +484,8 @@ font-style: normal;
 
 /* === Works Section === */
 .works {
+  width: 100%;
+  height: auto;
   background: #fff;
   position: relative;
   z-index: 9;
@@ -557,12 +493,13 @@ font-style: normal;
 
 .works-section-title {
   width: 100%;
-  height: 10vh;
-    margin:0 ;
+  height: 20vh;
+    margin-bottom:5vh;
     overflow: hidden;
+    position: relative;
 }
-.works-section-title h2 {
-    font-size: 50px;
+.works-section-title h1 {
+    font-size: 15vh;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -570,18 +507,132 @@ font-style: normal;
     letter-spacing: -2px;
 }
 
+.loop-slide-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.loop-slide {
+  display: inline-block;
+  white-space: nowrap;
+  animation: loop-slide-left 30s linear infinite;
+  font-size: 15vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
 
+@keyframes loop-slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.works-container {
+  width: 100%;
+  height: 100vh;
+  margin: 20vh 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* === Works Swiper === */
+
+.swiper-section {
+  margin-bottom: 30vh;
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.swiper {
+  margin: 0;
+  width: 40vw;
+  height: 35vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  overflow: hidden; /* 念のため */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin: 0 25vw;
+  top: 52%;
+  transform: translateY(-52%);
+  pointer-events: auto;
+  cursor: pointer;
+  width: 2vw;
+  height: 2vw;
+  background: none;
+  color: #000;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 3vh;
+  color: #000;
+}
+
+.swiper-name {
+  margin-bottom: 3vh;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.5vw;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-up-name {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* === Works Viewall === */
 .works-viewall {
-    margin: 300px 0 800px;
+    padding: 5vh 0;
     text-align: center;
+    background-color: #fff;
+    z-index: 5;
 }
 
 .viewall-link {
-    display: inline-block;
     font-size: 20px;
     text-decoration: none;
     white-space: nowrap;
     color: #000;
+    background-color: #fff;
     transition: filter 1s ease;
 }
 

@@ -42,7 +42,7 @@
 
     <!-- Reset & Main CSS -->
     <link rel="stylesheet" href="./assets/css/sanitize.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -95,35 +95,37 @@
 
     <!-- ==================== Index Works ==================== -->
     <section class="works">
-       <div class="works-section-title"><h1>*LOGO * TYPOGRAPHY * GRAPHIC * CONTEST </h1></div>
-    <div class="works-container">
-        <div class="swiper index-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/image/here-img-1.webp" alt="KNOCK Slide">
-                    <div class="slide-caption">KNOCK - 感性を刺激する強いノック . 2024</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image/here-img-2.webp" alt="AAC Slide">
-                    <div class="slide-caption">AAC - 記憶が生み出す新しい形 . 2023</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image/here-img-3.webp" alt="JINDAI Slide">
-                    <div class="slide-caption">神代附属 - 2025フライヤー . 2024</div>
+        <div class="works-section-title font-Acumin-default">
+          <div class="loop-slide-wrapper">
+            <h1 class="loop-slide">* LOGO * TYPOGRAPHY * GRAPHIC * CONTEST * VIDEO * PROJECT * LOGO * TYPOGRAPHY * GRAPHIC * CONTEST * VIDEO * PROJECT</h1>
+          </div>
+        </div>
+       <div class="swiper-section">
+            <div class="swiper-name font-DharmaGothic-C-exlight"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/image/here-img-1.webp" alt="work1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/image/here-img-3.webp" alt="work3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/image/here-img-2.webp" alt="work2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/image/works-typo-shade.webp" alt="work3">
+                    </div>
+                
                 </div>
             </div>
-            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="previous"></div>
-            <div class="swiper-button-next" tabindex="0" role="button" aria-label="next"></div>
-            <div class="swiper-pagination" tabindex="0" role="navigation" aria-label="select"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-    </div>
+        <div class="works-viewall">
+            <a href="works.html" class="viewall-link">VIEW ALL WORKS＋</a>
+        </div>
     </section>
-
-
-    <!-- ==================== View All Works ==================== -->
-    <div class="works-viewall">
-        <a href="works.html" class="viewall-link">VIEW ALL WORKS＋</a>
-    </div>
 
     <!-- ==================== Footer ==================== -->
       <div id="footer"></div>
@@ -131,9 +133,9 @@
     <!-- ==================== JS ==================== -->
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/include.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./assets/js/index-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/hero-video-effect.js"></script>
+    <script src="./assets/js/swiper-init.js"></script> 
 
 </body>
 
