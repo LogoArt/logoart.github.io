@@ -52,7 +52,7 @@ const contest = [
     image: "assets/image/works-logo-aki.webp",
     title: "Aki City",
     date: "2024-01-31",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982844-Branding-Aki-City"
   },
     {
     image: "assets/image/works-typo-dream.webp",
@@ -108,13 +108,13 @@ const logo = [
     image: "assets/image/works-logo-kusu-cafe1.webp",
     title: "KUSUNOKI CAFE",
     date: "2024-04-06",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/26214619-Logo-School-cafeteria"
   },
     {
      image: "assets/image/works-logo-domon.webp",
     title: "土門拳 Musium",
     date: "2024-08-05",
-    link: "http://www.domonken-kinenkan.jp/topics-news/news/logo4.html"
+    link: "https://dribbble.com/shots/26214918-Logo-Ken-Domon"
   },
   {
     image: "assets/image/works-logo-aki.webp",
@@ -123,10 +123,10 @@ const logo = [
     link: "https://example.com/sunset-design"
   },
     {
-  image: "assets/image/works-logo-autdoor.webp",
-  title: "Autdoor Brand",
+  image: "assets/image/works-logo-outdoor.webp",
+  title: "Outdoor Brand",
   date: "2023-09-07",
-  link: "https://example.com/sunset-design"
+  link: "https://dribbble.com/shots/25982524-Branding-Outdoor-brand"
   },
   {
     image: "assets/image/works-logo-laitier.webp",
@@ -436,13 +436,13 @@ const typography = [
     image: "assets/image/works-typo-dream.webp",
     title: "Dream Challenger",
     date: "2024-10-13",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25986843-Typography-Dream-Challenger"
   },
   {
     image: "assets/image/works-typo-shade.webp",
     title: "Font Shade",
     date: "2024-07-28",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25986834-Font-Shade"
   },
   {
     image: "assets/image/works-typo-nenga.webp",
@@ -460,13 +460,13 @@ const typography = [
     image: "assets/image/works-typo-marupop.webp",
     title: "Font Marupop",
     date: "2024-02-25",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25983288-Font-Maru-Pop"
   },
   {
     image: "assets/image/works-typo-solid.webp",
     title: "Font Solid",
     date: "2024-12-26",
-    link: "https://example.com/font-design"
+    link: "https://dribbble.com/shots/25986749-Font-Solid"
   },
   {
     image: "assets/image/works-typo-almaq.webp",
