@@ -46,43 +46,43 @@ const contest = [
     image: "assets/image/works-contest-pen.webp",
     title: "Shade",
     date: "2024-01-31",
-    link: "https://example.com/sunset-design"
+    link: "https://www.pen-online.jp/article/016431.html"
   },
     {
     image: "assets/image/works-logo-aki.webp",
     title: "Aki City",
     date: "2024-01-31",
-    link: "https://dribbble.com/shots/25982844-Branding-Aki-City"
+    link: "https://www.city.aki.kochi.jp/life/dtl.php?hdnKey=7483"
   },
     {
     image: "assets/image/works-typo-dream.webp",
     title: "Dream Challenger",
     date: "2024-10-13",
-    link: "https://example.com/font-design"
+    link: "https://koubo.jp/contest/249317"
   },
 {
     image: "assets/image/works-contest-apc1.webp",
     title: "DON'T ATTACK",
     date: "2024-02-11",
-    link: "https://example.com/sunset-design"
+    link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
   },
 {
     image: "assets/image/works-contest-apc2.webp",
     title: "医療への攻撃",
     date: "2024-02-11",
-    link: "https://example.com/sunset-design"
+    link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
   },
     {
     image: "assets/image/works-logo-shiraga.webp",
     title: "KAZUO SHIRAGA",
     date: "2024-01-24",
-    link: "https://example.com/sunset-design"
+    link: "https://compe.japandesign.ne.jp/result/shiraga-kazuo-logo-2024/"
   },
     {
     image: "assets/image/works-contest-magokoro.webp",
     title: "真心",
     date: "2024-07-31",
-    link: "https://example.com/sunset-design"
+    link: "https://www.flowercard.jp/campaign/gdc2024_result.html"
   },
 ];
 //Project
@@ -120,7 +120,7 @@ const logo = [
     image: "assets/image/works-logo-aki.webp",
     title: "Aki City",
     date: "2024-01-31",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982844-Branding-Aki-City"
   },
     {
   image: "assets/image/works-logo-outdoor.webp",

@@ -636,8 +636,8 @@ font-style: normal;
 .swiper-button-prev,
 .swiper-button-next {
   margin: 0 25vw;
-  top: 52%;
-  transform: translateY(-52%);
+  top: 54%;
+  transform: translateY(-54%);
   pointer-events: auto;
   cursor: pointer;
   width: 2vw;
