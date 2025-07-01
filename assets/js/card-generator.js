@@ -346,7 +346,7 @@ const logo = [
   },
     {
     image: "assets/image/works-logo-mimic.webp",
-    title: "Mimic",
+    title: "MimicArt",
     date: "2023-05-15",
     link: "https://dribbble.com/shots/25532111-Logo-MimicArt"
   },
@@ -374,6 +374,12 @@ const logo = [
     date: "2023-04-02",
     link: "https://dribbble.com/shots/24783865-Logo-J-M"
   },
+      {
+    image: "assets/image/works-logo-wb.webp",
+    title: "Logo W+B",
+    date: "2023-01-15",
+    link: "https://dribbble.com/shots/24770564-Logo-W-B"
+  },
     {
     image: "assets/image/works-logo-heart.webp",
     title: "Heart",
@@ -385,12 +391,6 @@ const logo = [
     title: "Record",
     date: "2023-09-17",
     link: "https://dribbble.com/shots/26207710-Icon-record"
-  },
-    {
-    image: "assets/image/works-logo-wb.webp",
-    title: "Logo W+B",
-    date: "2023-01-15",
-    link: "https://dribbble.com/shots/24770564-Logo-W-B"
   },
       {
     image: "assets/image/works-logo-z-green.webp",
