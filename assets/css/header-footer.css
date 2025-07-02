@@ -126,7 +126,6 @@
   transition: right 0.4s ease;
   padding: 100px 30px;
   box-sizing: border-box;
-  pointer-events: auto;
 }
 
 .navArea.open .glass-menu { right: 0; }
@@ -180,14 +179,21 @@
     height: 100vh;
     background: transparent;
     display: block;
-    pointer-events: auto;
     z-index: 21;
   }
   .glass-menu ul li a {
-    margin-left: 1vw;
+    margin-left: 2vw;
     font-size: 35px;
     color: #000;
     text-decoration: none;
+  }
+  .glass-menu,
+  .overlay {
+    pointer-events: none;
+  }
+  .navArea.open .glass-menu,
+  .navArea.open .overlay {
+    pointer-events: auto;
   }
 }
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -373,4 +379,9 @@
     font-size: 1.5vw;
     gap: 5vh;
 }
+}
+
+.footer, .footer-left, .menu-list, .menu-list li, .menu-list a {
+  overflow: visible;
+  position: relative;
 }

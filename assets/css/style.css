@@ -118,7 +118,7 @@ font-style: normal;
   }
 }
 
-/* ==================== Hero Section ==================== */
+/* ==================== Index Hero ==================== */
 .index-hero {
   width: 100vw;
   height: 100vh;
@@ -187,7 +187,7 @@ font-style: normal;
 .index-title.safari-title {
   mix-blend-mode: normal;
   filter: none;
-  color: #ffffff; /* 必要に応じて他の色も */
+  color: #fff;
 }
 
 @media (max-width: 599px) {
@@ -359,7 +359,7 @@ font-style: normal;
 }
 
 
-/* === Works Section === */
+/* === Index Works === */
 .works {
   width: 100%;
   height: auto;
@@ -451,7 +451,7 @@ font-style: normal;
   top: 54%;
   transform: translateY(-54%);
   pointer-events: auto;
-  cursor: pointer;
+  cursor:crosshair;
   width: 2vw;
   height: 2vw;
   background: none;
@@ -655,11 +655,11 @@ font-style: normal;
   z-index: 9;
 }
 
-  .profile-info {
+.profile-info {
     padding: 1.2vh 10vw 1.2vh 0;
     width: 100%;
     position: relative;
-  }
+}
 .profile-info::before {
   content: "";
   position: absolute;
@@ -1046,9 +1046,4 @@ font-style: normal;
   animation: fade-in 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
-}
-
-.footer, .footer-left, .menu-list, .menu-list li, .menu-list a {
-  overflow: visible;
-  position: relative;
 }
