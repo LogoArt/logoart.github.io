@@ -91,7 +91,7 @@ const project = [
     image: "assets/image/works-contest-ku-fes.webp",
     title: "2024 くすのき祭",
     date: "2024",
-    link: "https://example.com/contest-entry-3"
+    link: "kusunoki-fes.html"
   },
   {
     image: "assets/image/works-project-trackrock.webp",

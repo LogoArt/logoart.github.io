@@ -1,38 +1,62 @@
-// スクロール量に応じてガラス効果と明るさを調整（フェードアウトは廃止）
 window.addEventListener('DOMContentLoaded', function() {
-  // 新しい固定背景動画とエフェクト用要素を取得
-  const video = document.querySelector('.fixed-bg-video video');
-  const glass = document.querySelector('.fixed-bg-video .overlay-glass');
-  const hero = document.querySelector('.index-hero');
-  const profile = document.querySelector('.index-profile');
+  // index.html用
+  let video = document.querySelector('.fixed-bg-video video');
+  let glass = document.querySelector('.fixed-bg-video .overlay-glass');
+  let hero = document.querySelector('.index-hero');
+  let profile = document.querySelector('.index-profile');
+
+  // kusunoki-fes.html用（クラス名や構造に合わせて調整）
+  if (!video) video = document.querySelector('.project-section .project-hero-img');
+  if (!glass) glass = document.querySelector('.project-section .overlay-glass');
+  // hero: kusunoki-fes.htmlでは#heroセクションを優先
+  if (!hero) hero = document.querySelector('.project-section#hero') || document.querySelector('.project-section#about');
+  if (!profile) profile = document.querySelector('.project-section#content');
 
   if (!video || !glass || !hero || !profile) return;
 
   function updateEffect() {
-    const heroRect = hero.getBoundingClientRect();
-    const profileRect = profile.getBoundingClientRect();
-    const windowH = window.innerHeight;
-    // heroの下端からprofileの下端までの距離
-    const total = profileRect.bottom - heroRect.top;
-    // 現在のスクロール量
-    const scrolled = Math.max(0, window.scrollY - hero.offsetTop);
-    // 0〜1で進捗
-    const progress = Math.min(1, scrolled / total);
-    // blur: 0〜18px, brightness: 1〜0.7
-    const blur = 0 + 18 * progress;
-    const brightness = 1 - 0.5 * progress;
-    glass.style.backdropFilter = `blur(${blur}px) brightness(${brightness})`;
-    glass.style.background = `rgba(255,255,255,${0.08 + 0.22 * progress})`;
-    video.style.filter = `brightness(${1 - 0.15 * progress})`;
+    // kusunoki-fes.html用: heroが#heroなら発火タイミングを調整
+    if (hero.id === 'hero') {
+      const heroRect = hero.getBoundingClientRect();
+      const profileRect = profile.getBoundingClientRect();
+      const windowH = window.innerHeight;
+      const triggerY = windowH * 0.7;
+      const heroBottomY = heroRect.bottom;
+      let progress = 0;
+      if (heroBottomY < triggerY) {
+        const total = profileRect.bottom - triggerY;
+        progress = Math.min(1, (triggerY - heroBottomY) / total);
+        progress = Math.max(0, progress);
+      }
+      const blur = 0 + 18 * progress;
+      const brightness = 1 - 0.1 * progress;
+      glass.style.backdropFilter = `blur(${blur}px) brightness(${brightness})`;
+      glass.style.background = `rgba(255,255,255,${0.08 + 0.22 * progress})`;
+      video.style.filter = `brightness(${1 - 0.15 * progress})`;
+    } else {
+      // index.htmlや従来のロジック
+      const heroRect = hero.getBoundingClientRect();
+      const profileRect = profile.getBoundingClientRect();
+      const total = profileRect.bottom - heroRect.top;
+      const scrolled = Math.max(0, window.scrollY - hero.offsetTop);
+      const progress = Math.min(1, scrolled / total);
+      const blur = 0 + 18 * progress;
+      const brightness = 1 - 0.1 * progress;
+      glass.style.backdropFilter = `blur(${blur}px) brightness(${brightness})`;
+      glass.style.background = `rgba(255,255,255,${0.08 + 0.22 * progress})`;
+      if (video.tagName === 'VIDEO') {
+        video.style.filter = `brightness(${1 - 0.15 * progress})`;
+      } else {
+        video.style.filter = `brightness(${1 - 0.15 * progress})`;
+      }
+    }
   }
 
   function toggleVideoFixed() {
-    const profileRect = profile.getBoundingClientRect();
-    const videoBox = document.querySelector('.fixed-bg-video');
-    if (!videoBox) return;
-    // フェードアウトは行わず、常に表示・pointerEventsも固定
-    videoBox.style.opacity = '1';
-    videoBox.style.pointerEvents = 'auto';
+    if (glass) {
+      glass.style.opacity = '1';
+      glass.style.pointerEvents = 'auto';
+    }
   }
 
   window.addEventListener('scroll', updateEffect);
@@ -43,4 +67,3 @@ window.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', toggleVideoFixed);
   toggleVideoFixed();
 });
-
