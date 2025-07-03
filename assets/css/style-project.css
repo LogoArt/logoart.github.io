@@ -131,7 +131,7 @@
     z-index: 1;
 }
 .project-about-img img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   position: absolute;
