@@ -196,7 +196,7 @@ font-style: normal;
     padding:  80vh 0 0 4vw;
   }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .index-title {
     font-size: 10vw;
     padding:  70vh 0 0 4vw;
@@ -302,7 +302,7 @@ font-style: normal;
     letter-spacing: 0.1vw;
 }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .index-profile-hello {
   font-size: 20vw;
   margin-left:5vw ;
@@ -632,7 +632,7 @@ font-style: normal;
     letter-spacing: 0.2vw;
   }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .profile {
   padding: 150px 8vw 200px 8vw;
   box-sizing: border-box;
@@ -955,10 +955,10 @@ font-style: normal;
   }
 }
 
-/* タブレット用（600px〜1023px） */
-@media (min-width: 600px) and (max-width: 1023px) {
+/* タブレット用（600px〜1024px） */
+@media (min-width: 600px) and (max-width: 1024px) {
   .section-title h2 {
-    font-size: 20vw;;
+    font-size: 15vw;
   }
   .section-tags {
     display: none;
@@ -967,16 +967,16 @@ font-style: normal;
     margin: 0 40px;
   }
   .works-card-image {
-    height: 160px;
+    height: 200px;
   }
   .works-card-content {
-    padding: 40px 0 40px 40px;
+    padding: 60px 0 60px 40px;
   }
   .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 20px;
+    padding: 10px;
   }
   .card .title {
    font-size: 1.5vw;

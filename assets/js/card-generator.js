@@ -718,7 +718,6 @@ if (cardsSection) {
   else if (cardsSection.id === 'video') {
     dataList = video;
   }
-  // 必要なら他のidも追加
 }
 
 // カード生成
@@ -729,11 +728,14 @@ if (container && dataList.length > 0) {
     const isJapanese = /[\u3040-\u30FF\u4E00-\u9FFF]/.test(item.title);
     const metaClass = isJapanese ? 'card-meta font-Acumin-default font-zen-kaku-gothic' : 'card-meta font-Acumin-default';
 
+    // 内部リンク判定
+    const isInternal = !/^https?:\/\//.test(item.link);
+
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
       <div class="card">
-        <a href="${item.link}" target="_blank" style="text-decoration: none; color: #000;">
+        <a href="${item.link}"${isInternal ? '' : ' target="_blank"'} style="text-decoration: none; color: #000;">
           <div class="card-image">
             <img src="${item.image}" alt="${item.title}">
           </div>
@@ -749,7 +751,7 @@ if (container && dataList.length > 0) {
     container.appendChild(card);
   });
 
-    // JA or EN
+  // JA or EN
   const titles = container.querySelectorAll('.card-meta .title');
   titles.forEach(title => {
     const len = title.textContent.length;

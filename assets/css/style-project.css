@@ -162,24 +162,25 @@
     letter-spacing: 0.1vw;
  }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .project-section#about {
     margin: 30vh 0;
     height: 100vh;
   }
   .project-about-describe {
     margin: auto 0;
+    padding: 0;
     width: 70%;
   }
   .project-about-title {
     margin: 0;
-    padding: 8vh 0 0 10vw;
-    font-size: 6vw;
+    padding: 8vh 0 0 8vw;
+    font-size: 4vw;
     font-weight: bold;
  }
   .project-about-text {
-    padding: 8vh 10vw;
-    font-size: 2vw;
+    padding: 8vh 8vw;
+    font-size: 1.8vw;
     line-height: 2;
     font-weight: 400;
     font-style: normal;
@@ -259,9 +260,10 @@
   position:relative
 }
 
-@media (max-width: 599px) {
+@media (min-width: 0px) and (max-width: 1024px) {
   .project-content-container {
     margin: 0;
+    padding: 0;
     align-items: center;
     height: auto;
     min-height: 100vh;
@@ -275,6 +277,20 @@
   }
   .project-content-describe {
     order: 2 !important;
+  }
+  .project-content-describe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .project-content-container {
+    margin: 0;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
   }
   .project-content-img {
     position: static;
@@ -293,11 +309,6 @@
     object-fit: cover;
     position: static;
   }
-  .project-content-describe {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
   .project-content-title,
   .project-content-title.reverse {
     margin: 0;
@@ -306,20 +317,48 @@
     font-weight: lighter;
     letter-spacing: 0.3vw;
     text-align: center;
-}
-.project-content-text,
-.project-content-text.reverse  {
-    padding: 2vh 5vw;
-    font-size: 2.2vw;
-    line-height: 2;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.5vw;
-}
+  }
+    .project-content-text,
+    .project-content-text.reverse  {
+        padding: 2vh 5vw;
+        font-size: 2.2vw;
+        line-height: 2;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.5vw;
+    }
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
-  
+@media (min-width: 600px) and (max-width: 1024px) {
+    .project-content-img {
+    position: static;
+    width: auto;
+    height: 60vh;
+    max-width: 100%;
+    margin: 5vh auto 0 auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+  }
+  .project-content-title,
+  .project-content-title.reverse {
+    margin: 0;
+    padding: 2vh 0;
+    font-size: 3vw;
+    font-weight: lighter;
+    letter-spacing: 0.3vw;
+    text-align: center;
+  }
+    .project-content-text,
+    .project-content-text.reverse  {
+        padding: 2vh 5vw;
+        font-size: 1.8vw;
+        line-height: 2;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.5vw;
+  }
 }
 
 /* === Project Viewall === */
