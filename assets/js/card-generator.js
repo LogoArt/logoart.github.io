@@ -97,7 +97,7 @@ const project = [
     image: "assets/image/works-project-trackrock.webp",
     title: "TRACK ROCK",
     date: "2023 - 2024",
-    link: "https://example.com/contest-entry-3"
+    link: "trackrock.html"
   },
 
 ]
