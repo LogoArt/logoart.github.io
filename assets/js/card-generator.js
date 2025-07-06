@@ -99,6 +99,18 @@ const project = [
     date: "2023 - 2024",
     link: "trackrock.html"
   },
+  {
+    image: "assets/image/callo-img1.webp",
+    title: "Callo",
+    date: "2025",
+    link: "callo.html"
+  },
+  {
+    image: "assets/image/grunity-img1.webp",
+    title: "Grünity",
+    date: "2025",
+    link: "grunity.html"
+  },
 
 ]
 
