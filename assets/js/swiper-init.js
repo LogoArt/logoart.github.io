@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "POSTER DESIGN",
     "TYPOGRAPHY",
     "FONT",
+    "PROJECT",
   ];
 
   // アニメーション付きで作品名更新

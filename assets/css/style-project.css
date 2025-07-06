@@ -94,10 +94,8 @@
     height: 100vh;
 }
 .project-about-describe {
-    margin: auto 0;
     width: 70%;
     height: auto;
-    justify-content: center;
 }
 .project-about-describe.black {
     color: #000;
@@ -213,7 +211,7 @@
 }
 
 .project-content-describe {
-    margin: auto 0;
+    margin: 10vw 0;
     width: 50%;
     height: auto;
     justify-content: center;
@@ -254,7 +252,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: 35%;
-    height: 85%;
+    height: auto;
     z-index: 1;
     overflow: hidden;
 }
@@ -323,12 +321,22 @@
     order: 1 !important;
   }
   .project-content-describe {
+    margin: auto 0;
+    justify-content: center;
     order: 2 !important;
   }
   .project-content-describe {
     width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .project-content-describe {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -359,7 +367,7 @@
   .project-content-title,
   .project-content-title.reverse {
     margin: 0;
-    padding: 2vh 0 0 0;
+    padding: 2.5vh 0 0 0;
     font-size: 3vw;
     font-weight: lighter;
     letter-spacing: 0.3vw;
@@ -391,7 +399,7 @@
   .project-content-title,
   .project-content-title.reverse {
     margin: 0;
-    padding: 2vh 0;
+    padding: 4vh 0;
     font-size: 3vw;
     font-weight: lighter;
     letter-spacing: 0.3vw;
@@ -428,10 +436,6 @@
     height: auto !important; /* ← ここを追加 */
     margin-bottom: 6vh;      /* 画像間に余白を追加 */
   }
-}
-
-@media (max-width: 599px) {
-
 }
 
 /* === Project Viewall === */
