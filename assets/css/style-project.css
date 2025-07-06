@@ -408,6 +408,32 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .project-content-container-double {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto!important;
+}
+  .project-container-double {
+  flex-direction: column !important;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto!important;
+}
+.project-double-img {
+    width: 90vw;
+    height: auto !important; /* ← ここを追加 */
+    margin-bottom: 6vh;      /* 画像間に余白を追加 */
+  }
+}
+
+@media (max-width: 599px) {
+
+}
+
 /* === Project Viewall === */
 .project-viewall {
     padding: 30vh 0;
