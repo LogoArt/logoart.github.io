@@ -678,7 +678,7 @@ const video = [
     image: "assets/image/works-video-my-works.webp",
     title: "My works",
     date: "2025-02-26",
-    link: "https://www.youtube.com/watch?v=example1"
+    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
   },
   {
     image: "assets/image/works-video-keion.webp",
