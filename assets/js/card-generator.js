@@ -84,6 +84,12 @@ const contest = [
     date: "2024-07-31",
     link: "https://www.flowercard.jp/campaign/gdc2024_result.html"
   },
+  {
+    image: "assets/image/works-contest-kippy.webp",
+    title: "Kippy Terrace",
+    date: "2025-03-23",
+    link: "https://www.sanda-cblock.com/logo/"
+  },
 ];
 //Project
 const project = [
