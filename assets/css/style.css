@@ -29,7 +29,7 @@ button {
 }
 
 a:hover, a:focus {
-  cursor: crosshair !important;
+  cursor: pointer !important;
 }
 
 /* ==================== Font ==================== */
