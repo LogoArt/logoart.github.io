@@ -100,6 +100,12 @@ const project = [
     link: "kusunoki-fes.html"
   },
   {
+    image: "assets/image/works-contest-ku.webp",
+    title: "2025 学校フライヤー",
+    date: "2024 - 2025",
+    link: "school-flyer.html"
+  },
+  {
     image: "assets/image/works-project-trackrock.webp",
     title: "TRACK ROCK",
     date: "2023 - 2024",
