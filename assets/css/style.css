@@ -465,7 +465,7 @@ font-style: normal;
   top: 54%;
   transform: translateY(-54%);
   pointer-events: auto;
-  cursor:crosshair;
+  cursor:pointer;
   width: 2vw;
   height: 2vw;
   background: none;
