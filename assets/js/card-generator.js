@@ -487,6 +487,12 @@ const typography = [
     link: "https://dribbble.com/shots/25986749-Font-Solid"
   },
   {
+    image: "assets/image/works-typo-海.webp",
+    title: "海",
+    date: "2025-07-29",
+    link: "https://x.com/_LogoArt/status/1950042257194684904"
+  },
+  {
     image: "assets/image/works-typo-almaq.webp",
     title: "Font Almaq",
     date: "2023-07-25",
