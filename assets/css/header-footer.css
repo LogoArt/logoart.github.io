@@ -242,6 +242,9 @@
     font-size: 2vw;
     margin-bottom: 3vh;
 }
+.menu-list a:hover {
+  color: rgba(60 , 60, 60)!important;
+}
 
 .footer-left ul {
     list-style: none;
