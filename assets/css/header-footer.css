@@ -259,8 +259,8 @@
 
 .footer-logo {
     position: absolute;
-    bottom: 3vh;
-    left: 40px;
+    bottom: 0.5vh;
+    left: 10px;
     width: 70px;
     height: auto;
     padding: 0;
