@@ -6,6 +6,12 @@ const contest = [
     date: "2024-07-26",
     link: "https://school.japandesign.ne.jp/article/knock-01"
   },
+    {
+    image: "assets/image/works-contest-ku.webp",
+    title: "自然と共に日進月歩",
+    date: "2025-02-19",
+    link: "https://www.fhs.kanagawa-u.ac.jp/news/index.php?c=topics_view&pk=1746859600"
+  },
   {
     image: "assets/image/works-contest-aac.webp",
     title: "記憶が生み出す新しい形",
@@ -13,18 +19,12 @@ const contest = [
     link: "https://aac.urbanet.jp/aac2024-poster-judging-results/"
   },
   {
-    image: "assets/image/works-contest-ku.webp",
-    title: "自然と共に日進月歩",
-    date: "2025-02-19",
-    link: "https://www.fhs.kanagawa-u.ac.jp/news/index.php?c=topics_view&pk=1746859600"
-  },
-  {
     image: "assets/image/works-contest-maca.webp",
     title: "ふるさと",
     date: "2024-01-30",
     link: "https://maca.sendenkaigi.com/archive/index.html"
   },
-  {
+      {
     image: "assets/image/works-contest-ku-fes.webp",
     title: "KUSUNOKI FESTIVAL",
     date: "2024-08-23",
@@ -36,11 +36,11 @@ const contest = [
     date: "2024-08-05",
     link: "http://www.domonken-kinenkan.jp/topics-news/news/logo4.html"
   },
-    {
-    image: "assets/image/works-typo-nenga.webp",
-    title: "Pop 2025",
-    date: "2024-08-12",
-    link: "https://www.printpac.co.jp/design/2024/nenga_result/"
+      {
+    image: "assets/image/works-logo-shiraga.webp",
+    title: "KAZUO SHIRAGA",
+    date: "2024-01-24",
+    link: "https://compe.japandesign.ne.jp/result/shiraga-kazuo-logo-2024/"
   },
     {
     image: "assets/image/works-contest-pen.webp",
@@ -73,10 +73,16 @@ const contest = [
     link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
   },
     {
-    image: "assets/image/works-logo-shiraga.webp",
-    title: "KAZUO SHIRAGA",
-    date: "2024-01-24",
-    link: "https://compe.japandesign.ne.jp/result/shiraga-kazuo-logo-2024/"
+    image: "assets/image/works-typo-nenga.webp",
+    title: "Pop 2025",
+    date: "2024-08-12",
+    link: "https://www.printpac.co.jp/design/2024/nenga_result/"
+  },
+    {
+    image: "assets/image/works-contest-sapporo.webp",
+    title: "Sapporo",
+    date: "2025-05-30",
+    link: "https://www.city.sapporo.jp/kikaku/universal/jourei/logo_aisyou.html"
   },
     {
     image: "assets/image/works-contest-magokoro.webp",
