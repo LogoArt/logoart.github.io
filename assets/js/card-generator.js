@@ -802,26 +802,42 @@ if (container && dataList.length > 0) {
     const metaClass = isJapanese ? 'card-meta font-Acumin-default font-zen-kaku-gothic' : 'card-meta font-Acumin-default';
 
     // 内部リンク判定
-    const isInternal = !/^https?:\/\//.test(item.link);
+    const isInternal = !!item.link && !/^https?:\/\//.test(item.link);
 
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <div class="card">
-        <a href="${item.link}"${isInternal ? '' : ' target="_blank"'} style="text-decoration: none; color: #000;">
-          <div class="card-image">
-            <img src="${item.image}" alt="${item.title}">
-          </div>
-          <div class="card-divider"></div>
-          <div class="${metaClass}">
-            <p class="label font-Acumin-default">Title</p>
-            <p class="title">${item.title}</p>
-          </div>
-          <p class="card-date font-Acumin-default">${item.date}</p>
-        </a>
+const card = document.createElement("div");
+card.className = "card";
+
+if (item.link) {
+  card.innerHTML = `
+    <a href="${item.link}"${isInternal ? '' : ' target="_blank"'} style="text-decoration: none; color: #000;">
+      <div class="card-image">
+        <img src="${item.image}" alt="${item.title}">
       </div>
-    `;
-    container.appendChild(card);
+      <div class="card-divider"></div>
+      <div class="${metaClass}">
+        <p class="label font-Acumin-default">Title</p>
+        <p class="title">${item.title}</p>
+      </div>
+      <p class="card-date font-Acumin-default">${item.date}</p>
+    </a>
+  `;
+} else {
+  card.innerHTML = `
+    <div style="text-decoration: none; color: #000; cursor: default;">
+      <div class="card-image">
+        <img src="${item.image}" alt="${item.title}">
+      </div>
+      <div class="card-divider"></div>
+      <div class="${metaClass}">
+        <p class="label font-Acumin-default">Title</p>
+        <p class="title">${item.title}</p>
+      </div>
+      <p class="card-date font-Acumin-default">${item.date}</p>
+    </div>
+  `;
+}
+
+container.appendChild(card);
   });
 
   // JA or EN
