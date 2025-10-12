@@ -731,6 +731,40 @@ const video = [
 
 ]
 
+//Portfolio
+const portfolio = [
+  {
+    image: "assets/image/works-video-my-works.webp",
+    title: "2025 Portfolio Ver.2",
+    date: "",
+    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+  },
+  {
+    image: "assets/image/works-video-my-works.webp",
+    title: "2025 Portfolio Ver.1",
+    date: "",
+    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+  },
+  {
+    image: "assets/image/works-video-my-works.webp",
+    title: "2024 Portfolio",
+    date: "",
+    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+  },
+  {
+    image: "assets/image/works-video-my-works.webp",
+    title: "Portfolio - Web",
+    date: "",
+    link: ""
+  },
+  {
+    image: "assets/image/works-video-my-works.webp",
+    title: "Portfolio - 作品案",
+    date: "",
+    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+  },
+]
+
 
 // どのリストを使うか判定
 let dataList = [];
@@ -753,6 +787,9 @@ if (cardsSection) {
   }
   else if (cardsSection.id === 'video') {
     dataList = video;
+  }
+  else if (cardsSection.id === 'portfolio') {
+    dataList = portfolio;
   }
 }
 
