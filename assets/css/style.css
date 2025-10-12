@@ -280,7 +280,7 @@ font-style: normal;
   line-height: 1;
 }
 .index-profile-text {
-  margin:10vw 10vh;
+  margin:8vw 10vh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -290,7 +290,7 @@ font-style: normal;
   font-size: 3.2vw;
   line-height: 1.4;
   margin-bottom: 5vh;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.4vw;
 }
 
 .index-profile-des-ja {
@@ -304,12 +304,12 @@ font-style: normal;
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .index-profile-hello {
-  font-size: 20vw;
-  margin-left:5vw ;
+  font-size: 17vw;
+  margin-left:10vw ;
   line-height: 1;
 }
 .index-profile-text {
-  margin: 10vh 20vw 40vh 15vw;
+  margin: 5vh 20vw 40vh 15vw;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -319,11 +319,11 @@ font-style: normal;
   font-size: 3vw;
   line-height: 1.4;
   margin-bottom: 5vh;
-  letter-spacing: 1vw;
+  letter-spacing: 0.9vw;
 }
 
 .index-profile-des-ja {
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin-top: 30px;
     line-height: 2;
     font-weight: 400;
@@ -424,6 +424,7 @@ font-style: normal;
 /* === Works Swiper === */
 
 .swiper-section {
+  margin-top: 0;
   margin-bottom: 30vh;
   width: 100%;
   height: 100vh;
@@ -505,9 +506,31 @@ font-style: normal;
 .swiper-button-prev,
 .swiper-button-next {
   margin: 0 10px;
+  margin-top: 10.5vh;
   z-index: 30;
 }
 .swiper-name {
+  margin-top: 30vh;
+  margin-bottom: 2vh;
+  font-size: 10vw;
+}
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .swiper {
+  margin: 0;
+  width: 80vw;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  margin: 0 10px;
+  margin-top: 13vh;
+  z-index: 30;
+}
+.swiper-name {
+  margin-top: 20vh;
   margin-bottom: 2vh;
   font-size: 10vw;
 }
