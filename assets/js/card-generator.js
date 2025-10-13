@@ -734,34 +734,28 @@ const video = [
 //Portfolio
 const portfolio = [
   {
-    image: "assets/image/works-video-my-works.webp",
-    title: "2025 Portfolio Ver.2",
+    image: "assets/image/portfolio-ver.2.png",
+    title: "Portfolio 完成版",
     date: "",
-    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+    link: ""  // assets/pdf/2025ポートフォリオVer.2.pdf
   },
   {
-    image: "assets/image/works-video-my-works.webp",
+    image: "assets/image/portfolio-ver.1.png",
     title: "2025 Portfolio Ver.1",
     date: "",
-    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+    link: ""  // assets/pdf/2025ポートフォリオVer.1.pdf
   },
   {
-    image: "assets/image/works-video-my-works.webp",
+    image: "assets/image/portfolio-alpha.png",
     title: "2024 Portfolio",
     date: "",
-    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+    link: "assets/pdf/2024ポートフォリオ.pdf"
   },
   {
-    image: "assets/image/works-video-my-works.webp",
-    title: "Portfolio - Web",
-    date: "",
-    link: ""
-  },
-  {
-    image: "assets/image/works-video-my-works.webp",
+    image: "assets/image/portfolio-works.png",
     title: "Portfolio - 作品案",
     date: "",
-    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
+    link: "assets/pdf/ポートフォリオ-作品案.pdf"
   },
 ]
 
@@ -807,9 +801,12 @@ if (container && dataList.length > 0) {
 const card = document.createElement("div");
 card.className = "card";
 
+const isPdf = !!item.link && /\.pdf$/i.test(item.link);
+const isExternal = !!item.link && /^https?:\/\//.test(item.link);
+
 if (item.link) {
   card.innerHTML = `
-    <a href="${item.link}"${isInternal ? '' : ' target="_blank"'} style="text-decoration: none; color: #000;">
+    <a href="${item.link}"${(isExternal || isPdf) ? ' target="_blank"' : ''} style="text-decoration: none; color: #000;">
       <div class="card-image">
         <img src="${item.image}" alt="${item.title}">
       </div>
