@@ -736,26 +736,22 @@ const portfolio = [
   {
     image: "assets/image/portfolio-ver.2.png",
     title: "Portfolio 完成版",
-    date: "",
-    link: ""  // assets/pdf/2025ポートフォリオVer.2.pdf
+    link: ""  // /pdf/2025_portfolio_v2.pdf
   },
   {
     image: "assets/image/portfolio-ver.1.png",
     title: "2025 Portfolio Ver.1",
-    date: "",
-    link: ""  // assets/pdf/2025ポートフォリオVer.1.pdf
+    link: ""  // /pdf/2025_portfolio_v1.pdf"
   },
   {
     image: "assets/image/portfolio-alpha.png",
     title: "2024 Portfolio",
-    date: "",
-    link: "assets/pdf/2024ポートフォリオ.pdf"
+    link: "/pdf/2024_portfolio.pdf"
   },
   {
     image: "assets/image/portfolio-works.png",
     title: "Portfolio - 作品案",
-    date: "",
-    link: "assets/pdf/ポートフォリオ-作品案.pdf"
+    link: "/pdf/portfolio_works.pdf"
   },
 ]
 
