@@ -36,6 +36,18 @@ const contest = [
     date: "2024-08-05",
     link: "http://www.domonken-kinenkan.jp/topics-news/news/logo4.html"
   },
+    {
+    image: "assets/image/works-typo-dream.webp",
+    title: "Dream Challenger",
+    date: "2024-10-13",
+    link: "https://koubo.jp/contest/249317"
+  },
+      {
+    image: "assets/image/works-logo-zushi.webp",
+    title: "逗子 2026",
+    date: "2025-07-01",
+    link: "https://www.zushi-art.com/news/posts/20250913"
+  },
       {
     image: "assets/image/works-logo-shiraga.webp",
     title: "KAZUO SHIRAGA",
@@ -43,32 +55,20 @@ const contest = [
     link: "https://compe.japandesign.ne.jp/result/shiraga-kazuo-logo-2024/"
   },
     {
-    image: "assets/image/works-contest-pen.webp",
-    title: "Shade",
-    date: "2024-01-31",
-    link: "https://www.pen-online.jp/article/016431.html"
-  },
-    {
     image: "assets/image/works-logo-aki.webp",
     title: "Aki City",
     date: "2024-01-31",
     link: "https://www.city.aki.kochi.jp/life/dtl.php?hdnKey=7483"
   },
-    {
-    image: "assets/image/works-typo-dream.webp",
-    title: "Dream Challenger",
-    date: "2024-10-13",
-    link: "https://koubo.jp/contest/249317"
+      {
+    image: "assets/image/works-contest-pen.webp",
+    title: "Shade",
+    date: "2024-01-31",
+    link: "https://www.pen-online.jp/article/016431.html"
   },
 {
     image: "assets/image/works-contest-apc1.webp",
     title: "DON'T ATTACK",
-    date: "2024-02-11",
-    link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
-  },
-{
-    image: "assets/image/works-contest-apc2.webp",
-    title: "医療への攻撃",
     date: "2024-02-11",
     link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
   },
@@ -78,11 +78,11 @@ const contest = [
     date: "2024-08-12",
     link: "https://www.printpac.co.jp/design/2024/nenga_result/"
   },
-    {
-    image: "assets/image/works-contest-sapporo.webp",
-    title: "Sapporo",
-    date: "2025-05-30",
-    link: "https://www.city.sapporo.jp/kikaku/universal/jourei/logo_aisyou.html"
+  {
+    image: "assets/image/works-contest-apc2.webp",
+    title: "医療への攻撃",
+    date: "2024-02-11",
+    link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
   },
     {
     image: "assets/image/works-contest-magokoro.webp",
@@ -95,6 +95,12 @@ const contest = [
     title: "Kippy Terrace",
     date: "2025-03-23",
     link: "https://www.sanda-cblock.com/logo/"
+  },
+      {
+    image: "assets/image/works-contest-sapporo.webp",
+    title: "Sapporo",
+    date: "2025-05-30",
+    link: "https://www.city.sapporo.jp/kikaku/universal/jourei/logo_aisyou.html"
   },
 ];
 //Project
