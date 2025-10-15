@@ -341,7 +341,7 @@
 
 .copyright {
     position: absolute;
-    bottom: 3vh;
+    bottom: 2vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.6vw;
