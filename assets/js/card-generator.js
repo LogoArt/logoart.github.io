@@ -153,6 +153,12 @@ const logo = [
     link: "https://dribbble.com/shots/25982844-Branding-Aki-City"
   },
     {
+  image: "assets/image/works-logo-zushi.webp",
+  title: "逗子 2026",
+  date: "2025-07-01",
+  link: "https://www.foriio.com/works/1962925"
+  },
+    {
   image: "assets/image/works-logo-outdoor.webp",
   title: "Outdoor Brand",
   date: "2023-09-07",
