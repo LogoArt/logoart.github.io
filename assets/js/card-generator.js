@@ -183,6 +183,18 @@ const logo = [
     link: "https://dribbble.com/shots/25980457-Branding-LAITIER"
   },
   {
+    image: "assets/image/works-logo-grunity.webp",
+    title: "Grunity",
+    date: "2025-05-27",
+    link: "https://logoart.github.io/grunity.html"
+  },
+      {
+    image: "assets/image/works-logo-callo.webp",
+    title: "Callo",
+    date: "2024-04-20",
+    link: "https://logoart.github.io/callo.html"
+  },
+  {
     image: "assets/image/works-logo-area.webp",
     title: "Area",
     date: "2023-08-29",
