@@ -622,6 +622,12 @@ const graphic = [
     date: "2024-07-26",
     link: "https://school.japandesign.ne.jp/article/knock-01"
   },
+    {
+    image: "assets/image/works-graphic-degital.webp",
+    title: "DEGITAL DUST",
+    date: "2025-10-09",
+    link: "https://www.foriio.com/works/1963959"
+  },
   {
     image: "assets/image/works-graphic-okinawa.webp",
     title: "Okinawa",
@@ -633,6 +639,12 @@ const graphic = [
     title: "Flower",
     date: "2024-01-14",
     link: "https://www.foriio.com/works/1857497"
+  },
+  {
+    image: "assets/image/works-graphic-aac.webp",
+    title: "記憶が生み出す新しい形",
+    date: "2024-01-04",
+    link: "https://www.foriio.com/works/1863720"
   },
   {
     image: "assets/image/works-graphic-underground.webp",
