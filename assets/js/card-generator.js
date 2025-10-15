@@ -152,6 +152,12 @@ const logo = [
     date: "2024-08-05",
     link: "https://dribbble.com/shots/26214918-Logo-Ken-Domon"
   },
+    {
+     image: "assets/image/works-logo-mie.webp",
+    title: "MIE BEN",
+    date: "2025-09-14",
+    link: "https://www.foriio.com/works/1963294"
+  },
   {
     image: "assets/image/works-logo-aki.webp",
     title: "Aki City",
@@ -175,6 +181,18 @@ const logo = [
     title: "Litier",
     date: "2023-02-16",
     link: "https://dribbble.com/shots/25980457-Branding-LAITIER"
+  },
+  {
+    image: "assets/image/works-logo-area.webp",
+    title: "Area",
+    date: "2023-08-29",
+    link: "https://dribbble.com/shots/25982587-Branding-AREA-Eco-System"
+  },
+  {
+    image: "assets/image/works-logo-nai'a.webp",
+    title: "Ni'a Air plain",
+    date: "2024-04-23",
+    link: "https://dribbble.com/shots/25982352-Branding-Nai-a-Airlines"
   },
   {
     image: "assets/image/works-logo-zeck.webp",
@@ -216,7 +234,7 @@ const logo = [
     image: "assets/image/works-logo-planet.webp",
     title: "Planet",
     date: "2024-08-21",
-    link: "https://example.com/sunset-design"
+    link: "https://dribbble.com/shots/25982505-Branding-Planet"
   },
     {
     image: "assets/image/works-logo-m10.webp",
@@ -254,12 +272,6 @@ const logo = [
     date: "2024-08-07",
     link: "https://dribbble.com/shots/25982531-Branding-Abobo"
   },
-    {
-    image: "assets/image/works-logo-nai'a.webp",
-    title: "Ni'a Air plain",
-    date: "2024-04-23",
-    link: "https://dribbble.com/shots/25982352-Branding-Nai-a-Airlines"
-  },
   {
     image: "assets/image/works-logo-logo.webp",
     title: "L・O・G・O",
@@ -276,7 +288,7 @@ const logo = [
     image: "assets/image/works-logo-logoart.webp",
     title: "LogoArt",
     date: "2023-03-12",
-    link: "https://example.com/sunset-design"
+    link: ""
   },
     {
     image: "assets/image/works-logo-boat.webp",
@@ -349,12 +361,6 @@ const logo = [
     title: "Logo R-bird",
     date: "2022-08-20",
     link: "https://dribbble.com/shots/25980154-Logo-Letter-R"
-  },
-    {
-    image: "assets/image/works-logo-area.webp",
-    title: "Area",
-    date: "2023-08-29",
-    link: "https://dribbble.com/shots/25982587-Branding-AREA-Eco-System"
   },
     {
     image: "assets/image/works-logo-a-rose.webp",
@@ -514,7 +520,7 @@ const typography = [
     image: "assets/image/works-typo-海.webp",
     title: "海",
     date: "2025-07-29",
-    link: "https://x.com/_LogoArt/status/1950042257194684904"
+    link: "https://dribbble.com/shots/26423520-Typography-Ocean"
   },
   {
     image: "assets/image/works-typo-almaq.webp",
@@ -532,13 +538,13 @@ const typography = [
     image: "assets/image/works-typo-ukiyoe.webp",
     title: "浮世絵",
     date: "2024-03-21",
-    link: "https://example.com/font-design"
+    link: "https://www.foriio.com/works/1963321"
   },
     {
     image: "assets/image/works-typo-color.webp",
     title: "Color Poster",
     date: "2023-07-04",
-    link: "https://example.com/font-design"
+    link: "https://www.foriio.com/works/1857535"
   },
   {
     image: "assets/image/works-typo-typo-classic.webp",
@@ -592,7 +598,7 @@ const typography = [
     image: "assets/image/works-typo-scratch'70.webp",
     title: "Scratch'70",
     date: "2023-10-22",
-    link: "https://example.com/font-design"
+    link: "https://www.foriio.com/works/1963319"
   },
 ];
 
@@ -747,23 +753,13 @@ const video = [
 const portfolio = [
   {
     image: "assets/image/portfolio-ver.2.png",
-    title: "Portfolio 完成版",
+    title: "2025 Portfolio",
     link: ""  // /assets/pdf/2025_portfolio_v2.pdf
-  },
-  {
-    image: "assets/image/portfolio-ver.1.png",
-    title: "2025 Portfolio Ver.1",
-    link: ""  // /assets/pdf/2025_portfolio_v1.pdf"
   },
   {
     image: "assets/image/portfolio-alpha.png",
     title: "2024 Portfolio",
     link: "/assets/pdf/2024_portfolio.pdf"
-  },
-  {
-    image: "assets/image/portfolio-works.png",
-    title: "Portfolio - 作品案",
-    link: "/assets/pdf/portfolio_works.pdf"
   },
 ]
 

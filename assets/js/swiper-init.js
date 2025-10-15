@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiperNameEl = document.querySelector(".swiper-name");
 
   const workTitles = [
-    "GRAPHIC",
+    "CONTEST",
+    "PROJECT",
     "LOGO DESIGN",
     "POSTER DESIGN",
     "TYPOGRAPHY",
     "FONT",
-    "PROJECT",
   ];
 
   // アニメーション付きで作品名更新
