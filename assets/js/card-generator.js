@@ -387,10 +387,10 @@ const logo = [
     link: "https://dribbble.com/shots/25980154-Logo-Letter-R"
   },
     {
-    image: "assets/image/works-logo-a-rose.webp",
-    title: " Logo A-rose",
-    date: "2023-08-29",
-    link: "https://dribbble.com/shots/24742832-Logo-Letter-A-Rose"
+    image: "assets/image/works-logo-w.webp",
+    title: "Logo W",
+    date: "2023-01-15",
+    link: "https://dribbble.com/shots/26207620-Logo-W-Golden-ratio"
   },
     {
     image: "assets/image/works-logo-sphere.webp",
@@ -411,10 +411,10 @@ const logo = [
     link: "https://dribbble.com/shots/25980392-Logo-Tiger"
   },
     {
-    image: "assets/image/works-logo-w.webp",
-    title: "Logo W",
-    date: "2023-01-15",
-    link: "https://dribbble.com/shots/26207620-Logo-W-Golden-ratio"
+    image: "assets/image/works-logo-a-rose.webp",
+    title: " Logo A-rose",
+    date: "2023-08-29",
+    link: "https://dribbble.com/shots/24742832-Logo-Letter-A-Rose"
   },
     {
     image: "assets/image/works-logo-mimic.webp",
@@ -595,12 +595,6 @@ const typography = [
     link: "https://dribbble.com/shots/25983213-Typography-Classic"
   },
   {
-    image: "assets/image/works-typo-word.webp",
-    title: "Word Classic",
-    date: "2023-05-05",
-    link: "https://dribbble.com/shots/25983213-Typography-Classic"
-  },
-  {
     image: "assets/image/works-typo-design.webp",
     title: "デザイン",
     date: "2023-05-05",
@@ -707,12 +701,6 @@ const graphic = [
     link: ""
   },
   {
-    image: "assets/image/works-graphic-warp.webp",
-    title: "Warp",
-    date: "2023-09-21",
-    link: ""
-  },
-  {
     image: "assets/image/works-graphic-japan.webp",
     title: "江戸文化",
     date: "2024-03-21",
@@ -728,6 +716,12 @@ const graphic = [
     image: "assets/image/works-graphic-planet2.webp",
     title: "Planet 2",
     date: "2023-06-02",
+    link: ""
+  },
+    {
+    image: "assets/image/works-graphic-warp.webp",
+    title: "Warp",
+    date: "2023-09-21",
     link: ""
   },
   {
