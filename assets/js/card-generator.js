@@ -2,13 +2,13 @@
 const contest = [
   {
     image: "assets/image/works-contest-knock.webp",
-    title: "感性を刺激するKNOCK",
+    title: "【金賞】感性を刺激するKNOCK",
     date: "2024-07-26",
     link: "https://school.japandesign.ne.jp/article/knock-01"
   },
     {
     image: "assets/image/works-contest-ku.webp",
-    title: "自然と共に日進月歩",
+    title: "【採用】自然と共に日進月歩",
     date: "2025-02-19",
     link: "https://www.fhs.kanagawa-u.ac.jp/news/index.php?c=topics_view&pk=1746859600"
   },
@@ -32,7 +32,7 @@ const contest = [
   },
       {
     image: "assets/image/works-contest-ku-fes.webp",
-    title: "KUSUNOKI FESTIVAL",
+    title: "【採用】KUSUNOKI FESTIVAL",
     date: "2024-08-23",
     link: "https://www.fhs.kanagawa-u.ac.jp/life/fes_2024.html"
   },
