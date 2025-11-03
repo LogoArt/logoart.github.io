@@ -162,7 +162,7 @@ const logo = [
      image: "assets/image/works-logo-mie.webp",
     title: "MIE BEN",
     date: "2025-09-14",
-    link: "https://www.foriio.com/works/1963294"
+    link: "https://dribbble.com/shots/26663871"
   },
   {
     image: "assets/image/works-logo-aki.webp",
@@ -722,7 +722,7 @@ const graphic = [
     image: "assets/image/works-graphic-planet1.webp",
     title: "Planet 1",
     date: "2023-06-02",
-    link: "https://www.foriio.com/works/1857541"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-planet2.webp",
