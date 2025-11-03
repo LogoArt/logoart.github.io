@@ -632,85 +632,85 @@ const graphic = [
     image: "assets/image/works-contest-knock.webp",
     title: "感性を刺激するKNOCK",
     date: "2024-07-26",
-    link: "https://school.japandesign.ne.jp/article/knock-01"
+    link: ""
   },
     {
     image: "assets/image/works-graphic-degital.webp",
     title: "DEGITAL DUST",
     date: "2025-10-09",
-    link: "https://www.foriio.com/works/1963959"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-okinawa.webp",
     title: "Okinawa",
     date: "2023-11-04",
-    link: "https://www.foriio.com/works/1857474"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-flower.webp",
     title: "Flower",
     date: "2024-01-14",
-    link: "https://www.foriio.com/works/1857497"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-aac.webp",
     title: "記憶が生み出す新しい形",
     date: "2024-01-04",
-    link: "https://www.foriio.com/works/1863720"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-underground.webp",
     title: "Underground",
     date: "2023-12-27",
-    link: "https://www.foriio.com/works/1857434"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-rocket.webp",
     title: "Rocket",
     date: "2024-01-18",
-    link: "https://www.foriio.com/works/1857549"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-nano.webp",
     title: "Nano",
     date: "2024-01-19",
-    link: "https://www.foriio.com/works/1857424"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-tokyo.webp",
     title: "TOKYO FLASH",
     date: "2023-09-08",
-    link: "https://www.foriio.com/works/1857514"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-wave.webp",
     title: "Wave",
     date: "2023-10-02",
-    link: "https://www.foriio.com/works/1857450"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-butterfly.webp",
     title: "Butterfly Effect",
     date: "2024-03-23",
-    link: "https://www.foriio.com/works/1857491"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-soul.webp",
     title: "Soul",
     date: "2024-03-28",
-    link: "https://www.foriio.com/works/1857500"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-warp.webp",
     title: "Warp",
     date: "2023-09-21",
-    link: "https://www.foriio.com/works/1857508"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-japan.webp",
     title: "江戸文化",
     date: "2024-03-21",
-    link: "https://www.foriio.com/works/1857496"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-planet1.webp",
@@ -722,31 +722,31 @@ const graphic = [
     image: "assets/image/works-graphic-planet2.webp",
     title: "Planet 2",
     date: "2023-06-02",
-    link: "https://www.foriio.com/works/1857541"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-hightway.webp",
     title: "Art Hightway",
     date: "2023-03-20",
-    link: "https://www.foriio.com/works/1862764"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-spring.webp",
     title: "Art Spring",
     date: "2022-11-02",
-    link: "https://www.foriio.com/works/1862768"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-sand.webp",
     title: "Art Sand",
     date: "2023-03-23",
-    link: "https://www.foriio.com/works/1862766"
+    link: ""
   },
   {
     image: "assets/image/works-graphic-season.webp",
     title: "Art Season",
     date: "2022-08-08",
-    link: "https://www.foriio.com/works/1862775"
+    link: ""
   },
 ];
 
