@@ -12,6 +12,12 @@ const contest = [
     date: "2025-02-19",
     link: "https://www.fhs.kanagawa-u.ac.jp/news/index.php?c=topics_view&pk=1746859600"
   },
+    {
+    image: "assets/image/grunity-img1.webp",
+    title: "高校生みんなの夢ＡＷＡＲＤ in 大阪・関西万博",
+    date: "2025-05-27",
+    link: "https://yumeaward.org/school/"
+  },
   {
     image: "assets/image/works-contest-aac.webp",
     title: "記憶が生み出す新しい形",
@@ -70,7 +76,7 @@ const contest = [
     image: "assets/image/works-contest-apc1.webp",
     title: "DON'T ATTACK",
     date: "2024-02-11",
-    link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
+    link: "https://adobe.odyssey-com.co.jp/competition/2024/final_jp.html"
   },
     {
     image: "assets/image/works-typo-nenga.webp",
@@ -82,7 +88,7 @@ const contest = [
     image: "assets/image/works-contest-apc2.webp",
     title: "医療への攻撃",
     date: "2024-02-11",
-    link: "https://adobe.odyssey-com.co.jp/competition/2024/theme_jp.html"
+    link: "https://adobe.odyssey-com.co.jp/competition/2024/final_jp.html"
   },
     {
     image: "assets/image/works-contest-magokoro.webp",
