@@ -764,17 +764,11 @@ const graphic = [
 
 //Video
 const video = [
-  {
-    image: "assets/image/works-video-my-works.webp",
-    title: "My works",
-    date: "2025-02-26",
-    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
-  },
-  {
-    image: "assets/image/works-video-keion.webp",
-    title: "2024後夜祭",
-    date: "2024-10-27",
-    link: "https://www.youtube.com/watch?v=uPqIFvjs_D8"
+    {
+    image: "assets/image/works-logo-mountain.webp",
+    title: "Mountain",
+    date: "2025-02-08",
+    link: "https://www.instagram.com/reel/DFzfHNnTlC-/"
   },
   {
     image: "assets/image/works-video-logo-2023.webp",
@@ -793,6 +787,18 @@ const video = [
     title: "Mountain",
     date: "2025-02-08",
     link: "https://www.instagram.com/reel/DFzfHNnTlC-/"
+  },
+    {
+    image: "assets/image/works-video-keion.webp",
+    title: "2024後夜祭",
+    date: "2024-10-27",
+    link: "https://www.youtube.com/watch?v=uPqIFvjs_D8"
+  },
+    {
+    image: "assets/image/works-video-my-works.webp",
+    title: "My works",
+    date: "2025-02-26",
+    link: "https://www.instagram.com/reel/DMCH_BjPIRy/"
   },
 
 ]
