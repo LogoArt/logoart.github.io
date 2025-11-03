@@ -50,7 +50,7 @@
   width: 40px;
   height: 40px;
   z-index: 1100;
-  cursor:crosshair;
+  cursor:pointer
 }
 @media (max-width: 599px) {
   .header-logo img {
