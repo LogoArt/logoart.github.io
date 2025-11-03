@@ -249,6 +249,12 @@ const logo = [
     link: "https://dribbble.com/shots/25982505-Branding-Planet"
   },
     {
+    image: "assets/image/works-logo-bicycle.webp",
+    title: "Bicycle",
+    date: "2025-10-19",
+    link: "https://www.foriio.com/works/1990263"
+  },
+    {
     image: "assets/image/works-logo-m10.webp",
     title: "M10",
     date: "2024-11-28",
@@ -533,6 +539,12 @@ const typography = [
     title: "海",
     date: "2025-07-29",
     link: "https://dribbble.com/shots/26423520-Typography-Ocean"
+  },
+  {
+    image: "assets/image/works-typo-fluid.webp",
+    title: "Fruid",
+    date: "2025-10-25",
+    link: "https://www.foriio.com/works/1999060"
   },
   {
     image: "assets/image/works-typo-almaq.webp",
