@@ -174,7 +174,7 @@ const logo = [
   image: "assets/image/works-logo-zushi.webp",
   title: "逗子 2026",
   date: "2025-07-01",
-  link: "https://www.foriio.com/works/1962925"
+  link: "https://dribbble.com/shots/26722940"
   },
     {
   image: "assets/image/works-logo-outdoor.webp",
@@ -258,7 +258,7 @@ const logo = [
     image: "assets/image/works-logo-bicycle.webp",
     title: "Bicycle",
     date: "2025-10-19",
-    link: "https://www.foriio.com/works/1990263"
+    link: "https://dribbble.com/shots/26722905"
   },
     {
     image: "assets/image/works-logo-m10.webp",
@@ -486,19 +486,19 @@ const logo = [
     image: "assets/image/works-logo-firstwave.webp",
     title: "First wave",
     date: "2022-05-07",
-    link: "https://dribbble.com/shots/24719870-Logo-firstwave"
+    link: "https://dribbble.com/shots/24719870"
   },
     {
     image: "assets/image/works-logo-n-pen.webp",
     title: "Logo N-pen",
     date: "2022-12-31",
-    link: "https://dribbble.com/shots/24693323-Logo-N-Pen"
+    link: "https://dribbble.com/shots/24693323"
   },
     {
     image: "assets/image/works-logo-kusu-cafe2.webp",
     title: "CAFE tree",
     date: "2022-12-31",
-    link: "https://dribbble.com/shots/24693242-Cafe-tree"
+    link: "https://dribbble.com/shots/24693242"
   },
 ]
 
@@ -508,67 +508,73 @@ const typography = [
     image: "assets/image/works-typo-dream.webp",
     title: "Dream Challenger",
     date: "2024-10-13",
-    link: "https://dribbble.com/shots/25986843-Typography-Dream-Challenger"
+    link: "https://dribbble.com/shots/25986843"
   },
-  {
-    image: "assets/image/works-typo-shade.webp",
-    title: "Font Shade",
-    date: "2024-07-28",
-    link: "https://dribbble.com/shots/25986834-Font-Shade"
+    {
+    image: "assets/image/works-typo-fluid.webp",
+    title: "Fluid",
+    date: "2025-10-25",
+    link: "https://dribbble.com/shots/26722902"
   },
   {
     image: "assets/image/works-typo-nenga.webp",
     title: "Pop 2025",
     date: "2024-08-12",
-    link: "https://dribbble.com/shots/25986894-Typography-New-yaer-Japan"
+    link: "https://dribbble.com/shots/25986894"
   },
   {
     image: "assets/image/works-typo-valassca.webp",
     title: "Font Valassca",
     date: "2024-07-20",
-    link: "https://dribbble.com/shots/25983631-Font-Valassca"
+    link: "https://dribbble.com/shots/25983631"
   },
   {
     image: "assets/image/works-typo-marupop.webp",
     title: "Font Marupop",
     date: "2024-02-25",
-    link: "https://dribbble.com/shots/25983288-Font-Maru-Pop"
+    link: "https://dribbble.com/shots/25983288"
   },
   {
     image: "assets/image/works-typo-solid.webp",
     title: "Font Solid",
     date: "2024-12-26",
-    link: "https://dribbble.com/shots/25986749-Font-Solid"
+    link: "https://dribbble.com/shots/25986749"
   },
   {
     image: "assets/image/works-typo-海.webp",
     title: "海",
     date: "2025-07-29",
-    link: "https://dribbble.com/shots/26423520-Typography-Ocean"
+    link: "https://dribbble.com/shots/26423520"
   },
-  {
-    image: "assets/image/works-typo-fluid.webp",
-    title: "Fruid",
-    date: "2025-10-25",
-    link: "https://www.foriio.com/works/1999060"
+    {
+    image: "assets/image/works-typo-shade.webp",
+    title: "Font Shade",
+    date: "2024-07-28",
+    link: "https://dribbble.com/shots/25986834"
+  },
+    {
+    image: "assets/image/works-typo-星霜.webp",
+    title: "星霜",
+    date: "2025-08-25",
+    link: "https://dribbble.com/shots/26722908"
   },
   {
     image: "assets/image/works-typo-almaq.webp",
     title: "Font Almaq",
     date: "2023-07-25",
-    link: "https://dribbble.com/shots/25983455-Font-Almaq"
+    link: "https://dribbble.com/shots/25983455"
   },
   {
     image: "assets/image/works-typo-clip.webp",
     title: "Font Clip",
     date: "2024-04-03",
-    link: "https://dribbble.com/shots/25983541-Font-Clip"
+    link: "https://dribbble.com/shots/25983541"
   },
     {
     image: "assets/image/works-typo-ukiyoe.webp",
     title: "浮世絵",
     date: "2024-03-21",
-    link: "https://www.foriio.com/works/1963321"
+    link: "https://dribbble.com/shots/26722935"
   },
     {
     image: "assets/image/works-typo-color.webp",
@@ -580,43 +586,49 @@ const typography = [
     image: "assets/image/works-typo-typo-classic.webp",
     title: "Typography Classic",
     date: "2023-05-05",
-    link: "https://dribbble.com/shots/25983213-Typography-Classic"
+    link: "https://dribbble.com/shots/25983213"
   },
   {
     image: "assets/image/works-typo-typo-jp.webp",
     title: "タイポグラフィ",
     date: "2023-05-05",
-    link: "https://dribbble.com/shots/25983213-Typography-Classic"
+    link: "https://dribbble.com/shots/25983213"
   },
   {
     image: "assets/image/works-typo-kotoba.webp",
     title: "言葉のデザイン",
     date: "2023-05-05",
-    link: "https://dribbble.com/shots/25983213-Typography-Classic"
+    link: "https://dribbble.com/shots/25983213"
   },
   {
     image: "assets/image/works-typo-design.webp",
     title: "デザイン",
     date: "2023-05-05",
-    link: "https://dribbble.com/shots/25983213-Typography-Classic"
+    link: "https://dribbble.com/shots/25983213"
   },
   {
     image: "assets/image/works-typo-exist.webp",
     title: "Exist",
     date: "2025-05-05",
-    link: "https://dribbble.com/shots/25982339-Typography-Exist"
+    link: "https://dribbble.com/shots/25982339"
+  },
+  {
+    image: "assets/image/works-typo-foam.webp",
+    title: "Foam",
+    date: "2025-09-28",
+    link: "https://dribbble.com/shots/26722896"
   },
   {
     image: "assets/image/works-typo-logo.webp",
     title: "L/O/G/O",
     date: "2024-07-20",
-    link: "https://dribbble.com/shots/25982333-Typography-LOGO"
+    link: "https://dribbble.com/shots/25982333"
   },
   {
     image: "assets/image/works-typo-wave.webp",
     title: "WAVE",
     date: "2024-07-20",
-    link: "https://dribbble.com/shots/25983020-Typography-Wave"
+    link: "https://dribbble.com/shots/25983020"
   },
     {
     image: "assets/image/works-typo-scratch'70.webp",
