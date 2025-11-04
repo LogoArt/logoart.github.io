@@ -678,8 +678,34 @@ font-style: normal;
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 9.23vw;
+  justify-content:left;
+  gap: 15vw;
 }
+  .profile-title {
+    margin: 0;
+    padding: 0 0 10px 2vw;
+    font-size: 5vw;
+  }
+  .profile-image { 
+    overflow: visible; 
+  }
+  .profile-image img {
+    width: 150%;
+    height: auto;
+    display: block;
+    margin: 0;
+    }
+    .profile-name {
+    font-size: 7vw;
+    margin: 0 10px 0 0;
+    padding-bottom: 2vh;
+  }
+    .profile-en, .profile-ja {
+    padding: 0;
+    font-size: 1.5vw;
+    margin-bottom: 1.5vh;
+    letter-spacing: 0.2vw;
+  }
 }
 
 /* Plofile info */
