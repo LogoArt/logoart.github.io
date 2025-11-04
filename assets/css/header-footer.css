@@ -17,7 +17,7 @@
     margin: 0;
     width: 180px;
     height: auto;
-    padding: 10px 0 0 40px;
+    padding: 0px 0 0 40px;
     transition: filter 0.3s ease;
     z-index: 1100;
     position: relative;
@@ -55,9 +55,9 @@
 @media (max-width: 599px) {
   .header-logo img {
     margin: 0;
-    width: 120px;
+    width: 140px;
     height: auto;
-    padding: 10px 0 0 30px;
+    padding: 0px 0 0 30px;
     transition: filter 0.3s ease;
     z-index: 1100;
     position: relative;
@@ -73,9 +73,9 @@
 @media (min-width: 600px) and (max-width: 1024px) {
     .header-logo img {
     margin: 0;
-    width: 20vw;
+    width: 24vw;
     height: auto;
-    padding: 3vh 0 0 5vw;
+    padding: 2vh 0 0 5vw;
     transition: filter 0.3s ease;
     z-index: 1100;
     position: relative;
