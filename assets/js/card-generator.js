@@ -782,12 +782,6 @@ const video = [
     date: "2025-02-08",
     link: "https://www.instagram.com/reel/DFzsbxOz-DM/"
   },
-  {
-    image: "assets/image/works-logo-mountain.webp",
-    title: "Mountain",
-    date: "2025-02-08",
-    link: "https://www.instagram.com/reel/DFzfHNnTlC-/"
-  },
     {
     image: "assets/image/works-video-keion.webp",
     title: "2024後夜祭",
