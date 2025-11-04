@@ -820,6 +820,53 @@ font-style: normal;
     text-align: left;
   }
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  
+  .info-section {
+    width: 90%;
+    max-width: 1270px;
+    height: auto;
+    margin: 100px 5vw 200px 5vw;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8vw 2vw;
+    width: 100%;
+  }
+
+  .profile-info h2 {
+    padding-left: 0;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 4vw;
+    text-align: left;
+    width: 100%;
+  }
+  .profile-info p,
+  .profile-info ul {
+    margin-left: 0;
+    font-size: 2vw;
+    line-height: 1.8;
+    max-width: 100%;
+    text-align: left;
+    width: 100%;
+    letter-spacing: 0.2vw;
+  }
+  .profile-info ul {
+    padding-left: 0;
+  }
+  .profile-info ul li {
+    margin-bottom: 2vw;
+  }
+  .note p {
+    font-size: 2vw;
+    margin: 2vw 0 4vw 0;
+    color: #444;
+    text-align: left;
+  }
+}
 
 /* Works */
 
