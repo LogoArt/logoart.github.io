@@ -802,12 +802,12 @@ const portfolio = [
   {
     image: "assets/image/portfolio-ver.2.png",
     title: "2025 Portfolio",
-    link: ""  // /assets/pdf/2025_portfolio_v2.pdf
+    link: "https://drive.google.com/file/d/1aGFWDJvvev8lMly0Om18Ay_VG1WaZaP_/view?usp=drive_link"
   },
   {
     image: "assets/image/portfolio-alpha.png",
     title: "2024 Portfolio",
-    link: "/assets/pdf/2024_portfolio.pdf"
+    link: "https://drive.google.com/file/d/1EGRJuemy-nkp8FROhKS_SLS5ZhytYkM0/view?usp=drive_link"
   },
 ]
 
